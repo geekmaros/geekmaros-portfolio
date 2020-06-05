@@ -4,10 +4,10 @@
   <!--      LOGO-->
   <!--    </a>-->
   <!--  </header>-->
-  <header class="test h-16 flex bg-regal-purple">
+  <header class="h-20 flex relative items-center bg-regal-purple">
     <nav
       :class="scrollPosition > 10 ? 'scrolled sm:bg-white ' : ''"
-      class="sm:flex w-full sm:justify-between fixed sm:items-center shadow"
+      class="sm:flex w-full relative sm:justify-between fixed sm:items-center"
     >
       <div class="flex items-center justify-between flex-wrap px-4 py-3">
         <div class="image-container">
@@ -30,23 +30,43 @@
 
       <div
         :class="isOpen ? 'block' : 'hidden'"
-        class="nav-links mr-6 flex flex-col sm:flex sm:flex-row sm:items-center px-2 py-3 text-white"
+        class="nav-links flex flex-col sm:flex sm:flex-row sm:items-center hidden px-2 py-3 text-white"
       >
         <nuxt-link
           v-for="link in navLink"
           :key="link"
           to="/"
-          class="block sm:rounded-full text-blue-900 sm:text-white font-semibold hover:text-regal-pink px-2 py-1 sm:mt-0 sm:ml-2"
+          class="block sm:rounded-full text-white sm:text-white font-semibold hover:text-regal-blue font-medium px-2 py-1 sm:mt-0 sm:ml-2"
           >{{ link.name }}</nuxt-link
         >
 
         <button
-          class="bg-transparent border border-regal-blue sm:text-white  text-gray-900 mt-3 sm:mt-0 rounded block font-semibold px-2 py-1 sm:ml-2"
+          class="bg-transparent border-2 border-regal-blue sm:text-white text-gray-900 mt-3 sm:mt-0 rounded block font-semibold px-4 py-2 sm:ml-2"
         >
-          <nuxt-link to="#">Donate</nuxt-link>
+          <nuxt-link to="#">Resume</nuxt-link>
         </button>
       </div>
     </nav>
+
+    <!--    Mobile Nav bar -->
+    <div
+      :class="isOpen ? 'block' : 'hidden'"
+      class="nav-links flex flex-col h-screen px-10 py-24 text-white bg-aside-purple top-0 absolute w-1/2 right-0 sm:hidden"
+    >
+      <nuxt-link
+        v-for="link in navLink"
+        :key="link"
+        to="/"
+        class="block sm:rounded-full text-white sm:text-white font-semibold hover:text-regal-blue text-xl font-medium px-2 py-5 items-center text-center"
+        >{{ link.name }}</nuxt-link
+      >
+
+      <button
+        class="bg-transparent border-2 border-regal-blue text-white mt-3 rounded block font-semibold text-xl px-4 py-2 mt-10"
+      >
+        <nuxt-link to="#">Resume</nuxt-link>
+      </button>
+    </div>
   </header>
 </template>
 
@@ -94,4 +114,7 @@ export default {
   },
 }
 </script>
-<style scoped lang="sass"></style>
+<style scoped lang="sass">
+.nav-links
+ transition: block 3s ease-in
+</style>

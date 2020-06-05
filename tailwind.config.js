@@ -12,6 +12,7 @@ module.exports = {
         'regal-blue': '#64ffda',
         'regal-pink': '#e66470',
         'brand-purple': '#42366d',
+        'aside-purple': 'rgb(23, 42, 69)',
       },
     },
   },
