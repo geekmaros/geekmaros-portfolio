@@ -34,8 +34,8 @@
       >
         <nuxt-link
           v-for="link in navLink"
-          :key="link"
-          to="/"
+          :key="link.id"
+          to="/`${link.to}`"
           class="block sm:rounded-full text-white sm:text-white font-semibold hover:text-regal-blue font-medium px-2 py-1 sm:mt-0 sm:ml-2"
           >{{ link.name }}</nuxt-link
         >
@@ -50,12 +50,12 @@
 
     <!--    Mobile Nav bar -->
     <div
-      :class="isOpen ? 'block' : 'hidden'"
-      class="nav-links flex flex-col h-screen px-10 py-24 text-white bg-aside-purple top-0 absolute w-1/2 right-0 sm:hidden"
+      :class="isOpen ? 'blo' : 'hid'"
+      class="nav-links transform flex flex-col h-screen px-10 py-24 overflow-auto  text-white bg-aside-purple top-0 absolute w-1/2 right-0 sm:hidden"
     >
       <nuxt-link
         v-for="link in navLink"
-        :key="link"
+        :key="link.id"
         to="/"
         class="block sm:rounded-full text-white sm:text-white font-semibold hover:text-regal-blue text-xl font-medium px-2 py-5 items-center text-center"
         >{{ link.name }}</nuxt-link
@@ -78,18 +78,22 @@ export default {
       scrollPosition: null,
       navLink: [
         {
+          id: '1nl',
           name: 'About',
           to: '#about',
         },
         {
+          id: '2nl',
           name: 'Experience',
           to: '#experience',
         },
         {
+          id: '3nl',
           name: 'Work',
           to: '#work',
         },
         {
+          id: '4nl',
           name: 'Contact',
           to: '#contact',
         },
@@ -115,6 +119,11 @@ export default {
 }
 </script>
 <style scoped lang="sass">
-.nav-links
- transition: block 3s ease-in
+.nav-links.blo
+  right: 0
+  transition: right .5s ease-in
+
+.nav-links.hid
+  right: -300px
+  transition: all .5s ease-out
 </style>
