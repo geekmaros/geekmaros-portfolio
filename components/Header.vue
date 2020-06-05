@@ -1,12 +1,6 @@
 <template>
-  <!--  <header class="h-8 bg-regal-purple shadow md:px-8 lg:px-10">-->
-  <!--    <a href="/" class="text-lg text-white">-->
-  <!--      LOGO-->
-  <!--    </a>-->
-  <!--  </header>-->
-  <header class="h-20 flex relative items-center bg-regal-purple">
+  <header class="h-20 shadow flex relative items-center bg-regal-purple">
     <nav
-      :class="scrollPosition > 10 ? 'scrolled sm:bg-white ' : ''"
       class="sm:flex w-full relative sm:justify-between fixed sm:items-center"
     >
       <div class="flex items-center justify-between flex-wrap px-4 py-3">
@@ -30,18 +24,18 @@
 
       <div
         :class="isOpen ? 'block' : 'hidden'"
-        class="nav-links flex flex-col sm:flex sm:flex-row sm:items-center hidden px-2 py-3 text-white"
+        class="nav-links mr-8 flex flex-col sm:flex sm:flex-row sm:items-center hidden px-2 py-3 text-white"
       >
         <nuxt-link
           v-for="link in navLink"
           :key="link.id"
-          to="/`${link.to}`"
-          class="block sm:rounded-full text-white sm:text-white font-semibold hover:text-regal-blue font-medium px-2 py-1 sm:mt-0 sm:ml-2"
+          :to="`${link.to}`"
+          class="block sm:rounded-full text-white sm:text-white font-semibold sm:font-normal hover:text-regal-blue font-medium px-2 py-1 sm:mt-0 sm:ml-2"
           >{{ link.name }}</nuxt-link
         >
 
         <button
-          class="bg-transparent border-2 border-regal-blue sm:text-white text-gray-900 mt-3 sm:mt-0 rounded block font-semibold px-4 py-2 sm:ml-2"
+          class="bg-transparent border-2 border-regal-blue sm:text-white sm:hover:text-regal-blue text-gray-900 mt-3 sm:mt-0 rounded block font-semibold px-4 py-2 sm:ml-2"
         >
           <nuxt-link to="#">Resume</nuxt-link>
         </button>
@@ -51,7 +45,7 @@
     <!--    Mobile Nav bar -->
     <div
       :class="isOpen ? 'blo' : 'hid'"
-      class="nav-links transform flex flex-col h-screen px-10 py-24 overflow-auto  text-white bg-aside-purple top-0 absolute w-1/2 right-0 sm:hidden"
+      class="nav-links transform flex flex-col h-screen px-10 py-24 overflow-auto text-white bg-aside-purple top-0 absolute w-1/2 right-0 sm:hidden"
     >
       <nuxt-link
         v-for="link in navLink"
