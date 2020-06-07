@@ -6,9 +6,10 @@
     <h1 class="sm:text-6xl leading-snug text-5xl mt-4 text-white font-bold">
       Abdulrasaq Mustapha.
     </h1>
-    <h2 class="sm:text-5xl text-4xl mt-4 text-white leading-snug font-semibold">
-      I <span class="text-regal-blue">design</span> &
-      <span class="text-regal-pink">develop</span> frontend apps.
+    <h2 class="sm:text-5xl text-4xl mt-0 text-white leading-snug font-semibold">
+      I <span class="text-regal-blue font-bold sm:text-6xl">design</span> &
+      <span class="text-regal-pink font-bold sm:text-6xl">develop</span>
+      frontend apps.
     </h2>
     <p
       class="text-white font-normal text-base  sm:pr-32 sm:text-xl tracking-normal mt-5 leading-2"
@@ -18,7 +19,7 @@
     </p>
     <a href="mailto:razicruz@gmail.com" class="focus:outline-none">
       <button
-        class="text-regal-pink focus:outline-none mt-12 hover:bg-regal-purple hover:text-regal-pink rounded border border-regal-blue px-2 py-2 bg-transparent font-hairline font-medium"
+        class="text-white focus:outline-none mt-12 hover:bg-regal-purple hover:text-regal-blue rounded border border-regal-blue px-2 py-2 bg-transparent font-hairline font-medium"
       >
         Get In Touch
       </button>
