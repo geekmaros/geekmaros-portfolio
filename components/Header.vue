@@ -86,6 +86,7 @@ export default {
           name: 'Work',
           to: '#work',
         },
+
         {
           id: '4nl',
           name: 'Contact',
@@ -114,7 +115,7 @@ export default {
 </script>
 <style scoped lang="sass">
 .nav-links.blo
-  right: 0
+  right: 0tw
   transition: right .5s ease-in
 
 .nav-links.hid
