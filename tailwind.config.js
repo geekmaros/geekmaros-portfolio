@@ -6,6 +6,13 @@
  */
 module.exports = {
   theme: {
+    fontFamily: {
+      sans: ['Nunito', '-apple-system', 'BlinkMacSystemFont'],
+      serif: ['"Hind Siliguri"', 'Georgia', 'Cambria'],
+      mono: ['Satisfy', 'SFMono-Regular', 'Menlo'],
+      display: ['Oswald'],
+      body: ['Open Sans'],
+    },
     extend: {
       colors: {
         'regal-purple': '#0a192f',

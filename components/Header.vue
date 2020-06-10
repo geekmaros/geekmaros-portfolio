@@ -1,8 +1,6 @@
 <template>
   <header class="h-20 shadow flex relative items-center bg-regal-purple">
-    <nav
-      class="sm:flex w-full relative sm:justify-between fixed sm:items-center"
-    >
+    <nav class="sm:flex w-full relative sm:justify-between sm:items-center">
       <div class="flex items-center justify-between flex-wrap px-4 py-3">
         <div class="image-container">
           <h1>LOGO</h1>
@@ -30,8 +28,10 @@
           v-for="link in navLink"
           :key="link.id"
           :to="`${link.to}`"
-          class="block sm:rounded-full text-white sm:text-white font-semibold sm:font-normal hover:text-regal-blue font-medium px-2 py-1 sm:mt-0 sm:ml-2"
-          >{{ link.name }}</nuxt-link
+          class="block font-serif sm:rounded-full text-white sm:text-white font-semibold sm:font-normal hover:text-regal-blue font-medium px-2 py-1 sm:mt-0 sm:ml-2"
+        >
+          <!--          <span class="font-mono">{{ 1 + i++ }}.</span>-->
+          {{ link.name }}</nuxt-link
         >
 
         <button
@@ -45,18 +45,18 @@
     <!--    Mobile Nav bar -->
     <div
       :class="isOpen ? 'blo' : 'hid'"
-      class="nav-links transform flex flex-col h-screen px-10 py-24 overflow-auto text-white bg-aside-purple top-0 absolute w-1/2 right-0 sm:hidden"
+      class="nav-links transform z-10 flex flex-col h-screen px-10 py-24 overflow-auto text-white bg-aside-purple top-0 absolute w-1/2 right-0 sm:hidden"
     >
       <nuxt-link
         v-for="link in navLink"
         :key="link.id"
         to="/"
-        class="block sm:rounded-full text-white sm:text-white font-semibold hover:text-regal-blue text-xl font-medium px-2 py-5 items-center text-center"
+        class="block sm:rounded-full opacity-75 text-white sm:text-white font-semibold hover:text-regal-blue text-xl font-medium px-2 py-5 items-center text-center"
         >{{ link.name }}</nuxt-link
       >
 
       <button
-        class="bg-transparent border-2 border-regal-blue text-white mt-3 rounded block font-semibold text-xl px-4 py-2 mt-10"
+        class="bg-transparent opacity-75 border-2 border-regal-blue text-white mt-3 rounded block font-semibold text-xl px-4 py-2 mt-10"
       >
         <nuxt-link to="#">Resume</nuxt-link>
       </button>
