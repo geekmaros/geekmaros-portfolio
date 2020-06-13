@@ -16,7 +16,7 @@ html {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  background-color: var(--regal-purple);
 }
 
 *,

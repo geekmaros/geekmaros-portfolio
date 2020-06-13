@@ -43,6 +43,7 @@ export default {
     '@nuxtjs/eslint-module',
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
     '@nuxtjs/tailwindcss',
+    '@nuxt/components',
   ],
   /*
    ** Nuxt.js modules
@@ -68,4 +69,5 @@ export default {
      */
     extend(config, ctx) {},
   },
+  components: true,
 }

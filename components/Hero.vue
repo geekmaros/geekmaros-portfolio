@@ -1,5 +1,7 @@
 <template>
-  <section class="bg-regal-purple h-screen py-8 px-5 sm:py-20 sm:px-40">
+  <section
+    class="bg-regal-purple font-serif h-screen py-8 px-5 sm:py-20 sm:px-40"
+  >
     <span class="text-regal-blue text-base font-semibold lg:text-xl"
       >Hola, my name is</span
     >
