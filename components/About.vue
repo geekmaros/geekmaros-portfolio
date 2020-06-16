@@ -111,7 +111,7 @@ export default {
      position: absolute
      width: 17rem
      height: 17rem
-     border: 2px solid var(--regal-pink)
+     border: 2px solid var(--regal-blue)
      border-radius: 5px
      opacity: 0.8
      z-index: 2
