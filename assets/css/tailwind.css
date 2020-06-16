@@ -7,4 +7,6 @@
 :root{
     --regal-blue: #64ffda;
     --regal-purple: #0a192f;
+    --regal-pink: #e66470 ;
+    --regal-hover-purple: rgba(10, 25, 47, 0.62);
 }

@@ -35,9 +35,9 @@
           class="flex flex-col mt-4 sm:grid sm:grid-cols-2 sm:col-gap-0 sm:row-gap-2"
         >
           <li
-            class="text-base flex items-center mt-1"
             v-for="(tech, i) in technologies"
             :key="`tech-${i}`"
+            class="text-base flex items-center mt-1"
           >
             <img class="h4 pr-2" src="/assets/svg/list-icon.svg" alt="" />
             {{ tech }}
@@ -46,8 +46,9 @@
       </div>
 
       <div class="image-wrapper mt-8 sm:mt-0 sm:-ml-16">
-        <div class="overlay"></div>
-        <div class="img w-full rounded-sm"></div>
+        <div class="overlay z-10"></div>
+        <div class="img w-full rounded-sm">e66470</div>
+        <div class="square ml-4 mt-4 hover:mt-2"></div>
       </div>
     </div>
   </section>
@@ -85,6 +86,37 @@ export default {
      background: url('/assets/images/official2.jpeg')
      background-size: cover
      background-blend-mode: multiply
+     box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -15px;
+     z-index: 400
+
+
+
+
+   .overlay
+     position: absolute
+     width: 17rem
+     height: 17rem
+     background-color: rgb(100, 255, 218)
+     transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+     opacity: 0.5
+     z-index: 1000
+     filter: contrast(1)
+
+     &:hover
+       background-color: transparent
+       .square
+         background-color: red
+         border: 2px solid var(--regal-blue)
+   .square
+     position: absolute
+     width: 17rem
+     height: 17rem
+     border: 2px solid var(--regal-pink)
+     border-radius: 5px
+     opacity: 0.8
+     z-index: 2
+
+
 @media screen and (min-width: 1024px)
   section
     header

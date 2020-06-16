@@ -35,7 +35,7 @@
         >
 
         <button
-          class="bg-transparent border-2 border-regal-blue sm:text-white sm:hover:text-regal-blue text-gray-900 mt-3 sm:mt-0 rounded block font-semibold px-4 py-2 sm:ml-2"
+          class="bg-transparent border-2 border-regal-blue sm:text-white hover:bg-hover-purple sm:hover:text-regal-blue text-gray-900 mt-3 sm:mt-0 rounded block font-semibold px-4 py-2 sm:ml-2"
         >
           <nuxt-link to="#">Resume</nuxt-link>
         </button>

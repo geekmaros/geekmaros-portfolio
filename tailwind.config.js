@@ -20,6 +20,7 @@ module.exports = {
         'regal-pink': '#e66470',
         'brand-purple': '#42366d',
         'aside-purple': 'rgb(23, 42, 69)',
+        'hover-purple': 'rgba(36,59,90,0.62)',
       },
     },
   },
