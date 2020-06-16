@@ -47,7 +47,7 @@
 
       <div class="image-wrapper mt-8 sm:mt-0 sm:-ml-16">
         <div class="overlay z-10"></div>
-        <div class="img w-full rounded-sm">e66470</div>
+        <div class="img w-full rounded-sm"></div>
         <div class="square ml-4 mt-4 hover:mt-2"></div>
       </div>
     </div>
@@ -88,9 +88,6 @@ export default {
      background-blend-mode: multiply
      box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -15px;
      z-index: 400
-
-
-
 
    .overlay
      position: absolute
