@@ -22,7 +22,7 @@
       frontend apps.
     </h2>
     <p
-      class="text-white font-normal opacity-75 text-base sm:pr-32 sm:text-xl tracking-normal mt-5 leading-2"
+      class="text-white font-sans font-medium opacity-75 text-base sm:pr-32 sm:text-xl tracking-normal mt-5 leading-2"
     >
       I'm a Frontend Engineer with over 2 years of experience in designing and
       developing scalable websites and frontend applications.

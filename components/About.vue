@@ -1,10 +1,10 @@
 <template>
   <section
-    class="about font-serif text-xl bg-regal-purple h-auto py-8 px-5 sm:py-0 sm:px-40 lg:py-32"
+    class="about text-xl bg-regal-purple h-auto py-8 px-5 sm:py-0 sm:px-40 lg:py-32"
   >
     <header class="flex justify-start items-center relative mb-6">
       <span
-        class="text-about text-2xl font-semibold sm:text-3xl opacity-75 text-white sm:font-semibold"
+        class="text-about font-serif text-2xl font-semibold sm:text-3xl opacity-75 text-white sm:font-semibold"
         >About Me</span
       >
     </header>
@@ -102,7 +102,6 @@ export default {
      &:hover
        background-color: transparent
        .square
-         background-color: red
          border: 2px solid var(--regal-blue)
    .square
      position: absolute

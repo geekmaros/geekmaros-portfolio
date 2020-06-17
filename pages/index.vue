@@ -3,6 +3,7 @@
     <Header></Header>
     <Hero></Hero>
     <About></About>
+    <Work></Work>
   </div>
 </template>
 

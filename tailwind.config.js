@@ -7,7 +7,7 @@
 module.exports = {
   theme: {
     fontFamily: {
-      sans: ['Nunito', '-apple-system', 'BlinkMacSystemFont'],
+      sans: ['Quicksand', '-apple-system', 'BlinkMacSystemFont'],
       serif: ['"Hind Siliguri"', 'Georgia', 'Cambria'],
       mono: ['Satisfy', 'SFMono-Regular', 'Menlo'],
       display: ['Oswald'],
