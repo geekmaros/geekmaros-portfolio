@@ -15,7 +15,9 @@
           v-for="(place, i) in places"
           :key="`place-${i}`"
           @click="getActiveTab(i)"
-          :class="{ 'active-span': activeTab === i }"
+          :class="{
+            'active-span': activeTab === i,
+          }"
           ref="myActiveSpan"
           class="place text-white hover:bg-hover-purple"
         >
@@ -44,12 +46,8 @@ export default {
   },
   methods: {
     getActiveTab(i) {
-      console.log(i)
       this.activeTab = i
       const activeSpan = this.$refs.myActiveSpan[i]
-      // const activeSpan = document.getElementsByClassName('active-span')
-      // const { top } = activeSpan.getBoundingClientRect()
-      // this.spanPosition = top
       this.spanPosition = activeSpan.offsetTop
     },
   },
@@ -72,18 +70,15 @@ section
         width: 3px
         height: 2.75rem
         margin-left: -2px
-
+        transition: all .4s
       .place
         padding: .75rem 2rem
         cursor: pointer
         font-size: .875rem
         margin-left: -2px
-        transition: all .2s
-      .active
-        /*color: var(--regal-blue)
-        /*border-left: 3px solid var(--regal-blue)
-        /*margin-left: -2px
-        /*transition: all .5s*/
+
+      .active-span.place
+        color: var(--regal-blue)
 
 
 
