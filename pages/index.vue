@@ -4,6 +4,7 @@
     <Hero></Hero>
     <About></About>
     <Work></Work>
+    <Projects></Projects>
   </div>
 </template>
 

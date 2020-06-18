@@ -8,7 +8,7 @@
         >Where I've Worked</span
       >
     </header>
-    <div class="work-place sm:mt-10 flex">
+    <div class="work-place sm:mt-10 flex relative">
       <div class="work-tab flex sm:flex font-sans relative h-auto hidden">
         <span class="active-tab" :style="{ top: spanPosition + 'px' }"></span>
         <div
@@ -18,7 +18,7 @@
           :class="{
             'active-span': activeTab === i,
           }"
-          class="place text-white hover:bg-hover-purple"
+          class="place w-full text-white hover:bg-hover-purple"
           @click="getActiveTab(i)"
         >
           {{ place.employer }}
@@ -62,7 +62,9 @@
       </div>
 
       <!--     On Desktop -->
-      <div class="place-details mt-5 sm:mt-0 sm:block">
+      <div
+        class="place-details flex h-full w-full sm:pl-3 mt-5 sm:mt-0 sm:block"
+      >
         <div
           v-for="(place, i) in places"
           :key="`place-det-${i}`"
@@ -183,6 +185,7 @@ section
       position: relative
       flex-direction: column
       margin-right: 2rem
+      flex-basis: 30%
       align-self: flex-start
       border-left: 1px solid var(--regal-blue)
       .active-tab
@@ -195,12 +198,14 @@ section
         transition: all .4s
       .place
         padding: .75rem 2rem
+        width: 100%
         cursor: pointer
         font-size: .875rem
         margin-left: -2px
 
       .active-span.place
         color: var(--regal-blue)
+        background-color: var(--hover-purple)
 
 @media screen and (min-width: 400px)
   section
