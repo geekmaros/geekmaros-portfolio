@@ -22,7 +22,7 @@
             ><span class="text-regal-blue">geekmaros</span></a
           >, a frontend developer based in Nigeria( 🇳🇬 ).
         </p>
-        <p class="mt-4 tracking-tighter">
+        <p class="mt-4 tracking-tight">
           I leverage on web technologies to design and develop awesome digital
           solutions [products] for start-up companies and businesses. I am
           driven with the goal to always deliver top-notch products with focus
@@ -39,7 +39,7 @@
             :key="`tech-${i}`"
             class="text-base flex items-center mt-1"
           >
-            <img class="h4 pr-2" src="/assets/svg/list-icon.svg" alt="" />
+            <img class="h-4 pr-2" src="/assets/svg/list-icon.svg" alt="" />
             {{ tech }}
           </li>
         </ul>
@@ -111,6 +111,19 @@ export default {
      border-radius: 5px
      opacity: 0.8
      z-index: 2
+
+@media screen and (min-width: 400px)
+  section
+    header
+      .text-about:after
+        content: ''
+        position: absolute
+        height: 1px
+        width: 63%
+        top: 48%
+        right: 10px
+        opacity: 0.3
+        background: var(--regal-blue)
 
 
 @media screen and (min-width: 1024px)

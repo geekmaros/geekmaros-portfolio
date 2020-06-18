@@ -1,6 +1,6 @@
 <template>
   <section
-    class="work h-screen font-serif text-xl bg-regal-purple h-auto py-10 px-5 sm:py-0 sm:px-40 lg:py-32"
+    class="work font-serif text-xl bg-regal-purple h-auto py-24 px-5 sm:py-0 sm:px-40 lg:pl-64 lg:pt-24 lg:pb-24"
   >
     <header class="flex justify-start items-center relative mb-6">
       <span
@@ -8,20 +8,94 @@
         >Where I've Worked</span
       >
     </header>
-    <div class="work-place sm:mt-10 font-sans">
-      <div class="work-tab flex sm:flex relative h-auto">
+    <div class="work-place sm:mt-10 flex">
+      <div class="work-tab flex sm:flex font-sans relative h-auto hidden">
         <span class="active-tab" :style="{ top: spanPosition + 'px' }"></span>
         <div
           v-for="(place, i) in places"
           :key="`place-${i}`"
-          @click="getActiveTab(i)"
+          ref="myActiveSpan"
           :class="{
             'active-span': activeTab === i,
           }"
-          ref="myActiveSpan"
           class="place text-white hover:bg-hover-purple"
+          @click="getActiveTab(i)"
         >
-          {{ place }}
+          {{ place.employer }}
+        </div>
+      </div>
+      <!--      Mobile View-->
+      <div class="place-details mt-5 sm:mt-0 sm:hidden">
+        <div
+          v-for="(place, i) in places"
+          :key="`place-det-${i}`"
+          class="sub bg-aside-purple sm:bg-transparent mb-8 sm:mt-0 rounded-md py-5 px-4"
+        >
+          <div class="sub-heading">
+            <h3 class="sd-title font-semibold text-white">
+              {{ place.role }}
+              <span class="text-regal-blue">@ {{ place.employer }}</span>
+            </h3>
+            <span class="date font-sans text-white text-sm">{{
+              place.date
+            }}</span>
+          </div>
+          <div class="sub-details text-base pt-4">
+            <div
+              v-for="(task, j) in place.tasks"
+              :key="`place-task-${j}`"
+              class="tasks flex items-start p-0"
+            >
+              <img
+                class="h-3 mt-3 pr-2"
+                src="/assets/svg/list-icon.svg"
+                alt="list icon"
+              />
+              <p
+                class="text-justify mt-2 opacity-75 text-base tracking-wide text-white flex items-start"
+              >
+                {{ task }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--     On Desktop -->
+      <div class="place-details mt-5 sm:mt-0 sm:block">
+        <div
+          v-for="(place, i) in places"
+          :key="`place-det-${i}`"
+          v-show="activeTab === i"
+          class="sub bg-aside-purple sm:bg-transparent sm:mt-0 rounded-md p-3"
+        >
+          <div class="sub-heading">
+            <h3 class="sd-title font-semibold text-white">
+              {{ place.role }}
+              <span class="text-regal-blue">@ {{ place.employer }}</span>
+            </h3>
+            <span class="date font-sans text-white text-sm">{{
+              place.date
+            }}</span>
+          </div>
+          <div class="sub-details text-base pt-4">
+            <div
+              v-for="(task, j) in place.tasks"
+              :key="`place-task-${j}`"
+              class="tasks flex items-start p-0"
+            >
+              <img
+                class="h-3 mt-4 pr-2"
+                src="/assets/svg/list-icon.svg"
+                alt="list icon"
+              />
+              <p
+                class="text-justify mt-2 opacity-75 text-base tracking-wide text-white flex items-start"
+              >
+                {{ task }}
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -33,16 +107,64 @@ export default {
   name: 'Work',
   data() {
     return {
-      places: [
+      placess: [
         'Demz Analytics',
         'Freyda Inc',
         'Al-Hikmah University',
         'WebRelated Consulting',
       ],
+      places: [
+        {
+          role: 'Frontend Developer',
+          employer: 'Demz Analytics',
+          date: 'Nov 2019 - Feb 2020',
+          tasks: [
+            'Developed and maintained code for clientside dashboard usingHTML, CSS, SASS, Javascript and Vuejs.',
+            'Integrating with RESTful APIs as a part of implementing Authentication and other third parties APIs.',
+            ' Interacted closely with the UI team to ensure every pixel of UI design details was implemented.',
+            'Improved UX by adding a dark mode to the existing design.',
+          ],
+        },
+        {
+          role: 'Frontend Developer',
+          employer: 'Freyda Inc.',
+          date: 'Aug 2019 - October 2019',
+          tasks: [
+            'Converted UI mockup design to web templates.',
+            'Refined and improved the existing frontend code and design to meet the UI mockup design.',
+            'Built various reusable web component to improve legacy code.',
+            "Implemented a Progressive Web App feature for the company's website accompanied with SEO optimization.",
+          ],
+        },
+        {
+          role: 'Systems Programmer II',
+          employer: 'Al-Hikmah University',
+          date: 'July 2018 - April 2020',
+          tasks: [
+            'Improved existing University’s website and Webometrics.',
+            'Developed a new feature to automate admission process for Faculty of  Post Graduate Schools.',
+            'Built a Tech Community in the University to improve tech awareness.',
+          ],
+        },
+        {
+          role: 'Web Developer Intern',
+          employer: 'WebRelated Consulting',
+          date: 'Aug 2017 - Dec 2017',
+          tasks: [
+            'Worked on various client project as an Intern',
+            'Did everything expected from an Intern',
+          ],
+        },
+      ],
       activeTab: 0,
       spanPosition: null,
       color: 'red',
     }
+  },
+  computed: {
+    tasks() {
+      return this.places.tasks.filter((task) => task.length > 0)
+    },
   },
   methods: {
     getActiveTab(i) {
@@ -80,9 +202,18 @@ section
       .active-span.place
         color: var(--regal-blue)
 
-
-
-
+@media screen and (min-width: 400px)
+  section
+    header
+      .text-work:after
+        content: ''
+        position: absolute
+        height: 1px
+        width: 150px
+        top: 48%
+        right: 10px
+        opacity: 0.3
+        background: var(--regal-blue)
 
 
 @media screen and (min-width: 1024px)
