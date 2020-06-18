@@ -1,6 +1,6 @@
 <template>
   <section
-    class="work font-serif text-xl bg-regal-purple h-auto py-24 px-5 sm:py-0 sm:px-40 lg:pl-64 lg:pt-24 lg:pb-24"
+    class="work font-serif sm:h-screen text-xl bg-regal-purple h-auto py-24 px-5 sm:py-0 sm:px-40 lg:pl-64 lg:pt-24 lg:pb-24"
   >
     <header class="flex justify-start items-center relative mb-6">
       <span
@@ -63,7 +63,7 @@
 
       <!--     On Desktop -->
       <div
-        class="place-details flex h-full w-full sm:pl-3 mt-5 sm:mt-0 sm:block"
+        class="place-details flex h-full w-full sm:pl-3 mt-5 sm:mt-0 hidden sm:block"
       >
         <div
           v-for="(place, i) in places"
@@ -185,7 +185,8 @@ section
       position: relative
       flex-direction: column
       margin-right: 2rem
-      flex-basis: 30%
+      width: 40%
+      /*flex-basis: 30%*/
       align-self: flex-start
       border-left: 1px solid var(--regal-blue)
       .active-tab
