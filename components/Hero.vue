@@ -6,9 +6,7 @@
       class="text-regal-blue opacity-75 font-sans text-base font-semibold lg:text-xl"
       >Hola, my name is</span
     >
-    <h1
-      class="text-3xl md:text-6xl leading-loose lg:leading-snug text-white font-bold"
-    >
+    <h1 class="text-3xl md:text-6xl lg:leading-snug text-white font-bold">
       Abdulrasaq Mustapha.
     </h1>
     <h2
