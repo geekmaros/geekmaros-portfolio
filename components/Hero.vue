@@ -77,5 +77,5 @@ export default {}
 textbase
 section
   .hero-text
-    @apply text-white font-sans font-medium opacity-75 tracking-normal mt-8
+    @apply text-white font-serif font-normal opacity-75 tracking-normal mt-8
 </style>
