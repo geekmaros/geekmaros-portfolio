@@ -22,6 +22,30 @@ module.exports = {
         'aside-purple': 'rgb(23, 42, 69)',
         'hover-purple': 'rgba(36,59,90,0.62)',
       },
+      screens: {
+        // xl: '1280px',
+        // // => @media (max-width: 1279px) { ... }
+        //
+        // lg: '1024px',
+        // // => @media (max-width: 1023px) { ... }
+        //
+        // md: '960px',
+        // // => @media (max-width: 767px) { ... }
+        //
+        // sm: '640px',
+        // // => @media (max-width: 639px) { ... }
+        // xl: { max: '1279px' },
+        // // => @media (max-width: 1279px) { ... },
+        //
+        // lg: { max: '1023px' },
+        // // => @media (max-width: 1023px) { ... },
+        //
+        // md: { max: '767px' },
+        // // => @media (max-width: 767px) { ... }.
+        //
+        // sm: { max: '639px' },
+        // // => @media (max-width: 639px) { ... },
+      },
     },
   },
   variants: {},

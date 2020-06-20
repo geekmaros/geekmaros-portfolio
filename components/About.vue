@@ -1,18 +1,18 @@
 <template>
   <section
-    class="about text-xl bg-regal-purple h-auto py-8 px-5 sm:py-0 sm:px-40 lg:py-32"
+    class="about text-xl bg-regal-purple h-auto py-24 px-5 md:py-16 md:px-10 lg:py-32 lg:px-40"
   >
     <header class="flex justify-start items-center relative mb-6">
       <span
-        class="text-about font-serif text-2xl font-semibold sm:text-3xl opacity-75 text-white sm:font-semibold"
+        class="text-about font-serif text-2xl font-semibold md:text-3xl opacity-75 text-white md:font-semibold"
         >About Me</span
       >
     </header>
 
     <div
-      class="about-content tracking-tighter relative font-serif opacity-75 flex flex-col items-center text-white sm:grid sm:grid-cols-3 sm:items-start"
+      class="about-content tracking-tighter relative font-serif opacity-75 flex flex-col items-center text-white lg:grid lg:grid-cols-3 items-start"
     >
-      <div class="about-compo text-justify sm:col-span-2 sm:pr-48">
+      <div class="about-compo text-justify sm:col-span-2 md:pr-0 lg:pr-48">
         <p class="tracking-tighter">
           Hola! I'm Abdulrasaq Mustapha also known as
           <a
@@ -45,7 +45,7 @@
         </ul>
       </div>
 
-      <div class="image-wrapper mt-8 sm:mt-0 sm:-ml-16">
+      <div class="image-wrapper mt-8 md:-mr-64 lg:mt-0 lg:-ml-16">
         <div class="overlay z-10"></div>
         <div class="img w-full rounded-sm"></div>
         <div class="square ml-4 mt-4 hover:mt-2"></div>
@@ -94,7 +94,7 @@ export default {
      width: 17rem
      height: 17rem
      background-color: rgb(100, 255, 218)
-     transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+     transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s
      opacity: 0.5
      z-index: 1000
      filter: contrast(1)
@@ -112,10 +112,12 @@ export default {
      opacity: 0.8
      z-index: 2
 
-@media screen and (min-width: 400px)
+@media screen and (max-width: 414px)
   section
+
     header
       .text-about:after
+        display: none
         content: ''
         position: absolute
         height: 1px
@@ -124,6 +126,21 @@ export default {
         right: 10px
         opacity: 0.3
         background: var(--regal-blue)
+
+@media screen and (max-width: 968px)
+  section
+
+    header
+      .text-about:after
+        content: ''
+        position: absolute
+        height: 1px
+        width: 70%
+        top: 48%
+        right: 10%
+        opacity: 0.3
+        background: var(--regal-blue)
+
 
 
 @media screen and (min-width: 1024px)

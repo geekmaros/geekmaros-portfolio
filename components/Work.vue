@@ -1,6 +1,6 @@
 <template>
   <section
-    class="work font-serif sm:h-screen text-xl bg-regal-purple h-auto py-24 px-5 sm:py-0 sm:px-40 lg:pl-64 lg:pt-24 lg:pb-24"
+    class="work font-serif sm:h-screen text-xl bg-regal-purple h-auto py-24 px-5 sm:py-0 sm:px-40 md:py-16 md:px-10 lg:pl-64 lg:pr-40 lg:pt-24 lg:pb-24"
   >
     <header class="flex justify-start items-center relative mb-6">
       <span
@@ -9,7 +9,9 @@
       >
     </header>
     <div class="work-place sm:mt-10 flex relative">
-      <div class="work-tab flex sm:flex font-sans relative h-auto hidden">
+      <div
+        class="work-tab flex sm:flex md-w-1/2 font-sans relative h-auto hidden"
+      >
         <span class="active-tab" :style="{ top: spanPosition + 'px' }"></span>
         <div
           v-for="(place, i) in places"
@@ -63,7 +65,7 @@
 
       <!--     On Desktop -->
       <div
-        class="place-details flex h-full w-full sm:pl-3 mt-5 sm:mt-0 hidden sm:block"
+        class="place-details flex h-full w-full sm:pl-3 md:-mt-4 mt-5 sm:mt-0 lg:-mt-4 hidden sm:block"
       >
         <div
           v-for="(place, i) in places"
@@ -184,8 +186,7 @@ section
     .work-tab
       position: relative
       flex-direction: column
-      margin-right: 2rem
-      width: 40%
+      width: 50%
       /*flex-basis: 30%*/
       align-self: flex-start
       border-left: 1px solid var(--regal-blue)
@@ -208,18 +209,35 @@ section
         color: var(--regal-blue)
         background-color: var(--hover-purple)
 
-@media screen and (min-width: 400px)
+@media screen and (max-width: 414px)
   section
+
+    header
+      .text-work:after
+        display: none
+        content: ''
+        position: absolute
+        height: 1px
+        width: 63%
+        top: 48%
+        right: 10px
+        opacity: 0.3
+        background: var(--regal-blue)
+
+@media screen and (max-width: 968px)
+  section
+
     header
       .text-work:after
         content: ''
         position: absolute
         height: 1px
-        width: 150px
+        width: 70%
         top: 48%
-        right: 10px
+        right: 10%
         opacity: 0.3
         background: var(--regal-blue)
+
 
 
 @media screen and (min-width: 1024px)
@@ -229,7 +247,7 @@ section
         content: ''
         position: absolute
         height: 1px
-        width: 20vw
+        width: 30%
         top: 48%
         left: 30%
         opacity: 0.3

@@ -1,43 +1,42 @@
 <template>
-  <header class="h-20 shadow flex relative items-center bg-regal-purple">
-    <nav class="sm:flex w-full relative sm:justify-between sm:items-center">
-      <div class="flex items-center justify-between flex-wrap px-4 py-3">
-        <div class="image-container">
+  <header
+    class="h-16 z-10 md:h-20 lg:h-20 z-10 w-full fixed shadow items-center bg-regal-purple px-4 py-1"
+  >
+    <nav
+      class="flex h-full w-full relative justify-between items-center md:px-4 md:py-8"
+    >
+      <div class="w-full h-full flex items-center justify-between flex-wrap">
+        <div class="image-container lg:-mt-2">
           <h1>LOGO</h1>
         </div>
 
         <button
-          class="flex items-center focus:outline-none sm:hidden"
+          class="flex z-50 items-center focus:outline-none md:block lg:hidden"
           @click="isOpen = !isOpen"
         >
-          <img
-            class="z-50"
-            width="24px"
-            height="24px"
-            :src="hamburgerSrc"
-            alt=""
-          />
+          <img class="" width="24px" height="24px" :src="hamburgerSrc" alt="" />
         </button>
       </div>
 
       <div
-        :class="isOpen ? 'block' : 'hidden'"
-        class="nav-links mr-8 flex flex-col sm:flex sm:flex-row sm:items-center hidden px-2 py-3 text-white"
+        class="nav-links flex flex-row items-center px-2 py-3 text-white hidden lg:flex"
       >
         <nuxt-link
           v-for="link in navLink"
           :key="link.id"
           :to="`${link.to}`"
-          class="block font-serif sm:rounded-full text-white sm:text-white font-semibold sm:font-normal hover:text-regal-blue font-medium px-2 py-1 sm:mt-0 sm:ml-2"
+          class="block font-serif rounded-full text-white text-white hover:text-regal-blue font-medium px-2 py-1 mt-0 ml-2"
         >
           <!--          <span class="font-mono">{{ 1 + i++ }}.</span>-->
           {{ link.name }}</nuxt-link
         >
 
         <button
-          class="bg-transparent border-2 border-regal-blue sm:text-white hover:bg-hover-purple sm:hover:text-regal-blue text-gray-900 mt-3 sm:mt-0 rounded block font-semibold px-4 py-2 sm:ml-2"
+          class="bg-transparent border-2 border-regal-blue text-white hover:bg-hover-purple text-gray-900 rounded block font-semibold px-4 py-2 ml-2"
         >
-          <nuxt-link to="#">Resume</nuxt-link>
+          <nuxt-link to="#" class="text-white hover:text-regal-blue"
+            >Resume</nuxt-link
+          >
         </button>
       </div>
     </nav>
@@ -45,13 +44,13 @@
     <!--    Mobile Nav bar -->
     <div
       :class="isOpen ? 'blo' : 'hid'"
-      class="nav-links transform z-10 flex flex-col h-screen px-10 py-24 overflow-auto text-white bg-aside-purple top-0 absolute w-1/2 right-0 sm:hidden"
+      class="mobile-nav nav-links transform flex flex-col h-screen px-10 py-24 overflow-auto text-white bg-aside-purple lg:hidden top-0 absolute w-1/2"
     >
       <nuxt-link
         v-for="link in navLink"
         :key="link.id"
         to="/"
-        class="block sm:rounded-full opacity-75 text-white sm:text-white font-semibold hover:text-regal-blue text-xl font-medium px-2 py-5 items-center text-center"
+        class="block rounded-full text-white text-white font-semibold hover:text-regal-blue text-xl font-medium px-2 py-5 items-center text-center"
         >{{ link.name }}</nuxt-link
       >
 
@@ -118,6 +117,6 @@ export default {
   transition: right .5s ease-in
 
 .nav-links.hid
-  right: -300px
+  right: -1000px
   transition: all .5s ease-out
 </style>
