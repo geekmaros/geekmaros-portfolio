@@ -1,6 +1,7 @@
 <template>
   <section
-    class="work font-serif sm:h-screen text-xl bg-regal-purple h-auto py-24 px-5 sm:py-0 sm:px-40 md:py-16 md:px-10 lg:pl-64 lg:pr-40 lg:pt-24 lg:pb-24"
+    id="experience"
+    class="work font-serif text-xl bg-regal-purple h-auto py-24 px-5 sm:py-0 sm:px-40 md:py-16 md:px-10 lg:pl-64 lg:pr-40 lg:pt-24 lg:pb-24"
   >
     <header class="flex justify-start items-center relative mb-6">
       <span
@@ -20,7 +21,7 @@
           :class="{
             'active-span': activeTab === i,
           }"
-          class="place w-full text-white hover:bg-hover-purple"
+          class="place w-full lg:w-8/12 text-white hover:bg-hover-purple"
           @click="getActiveTab(i)"
         >
           {{ place.employer }}

@@ -6,11 +6,11 @@
       class="text-regal-blue opacity-75 font-sans text-base font-semibold lg:text-xl"
       >Hola, my name is</span
     >
-    <h1 class="text-3xl md:text-6xl lg:leading-snug text-white font-bold">
+    <h1 class="text-3xl md:text-6xl lg:leading-normal text-white font-bold">
       Abdulrasaq Mustapha.
     </h1>
     <h2
-      class="text-2xl md:text-5xl opacity-75 mt-0 text-white leading-snug font-semibold"
+      class="text-2xl md:text-5xl opacity-75 mt-0 text-white lg:leading-tight leading-snug font-semibold"
     >
       I
       <span class="text-regal-blue opacity-100 font-bold text-3xl md:text-6xl"

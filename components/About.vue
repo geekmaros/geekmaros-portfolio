@@ -1,5 +1,6 @@
 <template>
   <section
+    id="about"
     class="about text-xl bg-regal-purple h-auto py-24 px-5 md:py-16 md:px-10 lg:py-32 lg:px-40"
   >
     <header class="flex justify-start items-center relative mb-6">

@@ -1,5 +1,6 @@
 <template>
   <section
+    id="work"
     class="about text-xl bg-regal-purple h-auto py-8 px-5 sm:py-0 sm:px-40 lg:py-32"
   >
     <header class="flex justify-start items-center relative mb-6">

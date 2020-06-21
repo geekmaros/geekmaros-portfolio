@@ -7,7 +7,9 @@
     >
       <div class="w-full h-full flex items-center justify-between flex-wrap">
         <div class="image-container lg:-mt-2">
-          <h1>LOGO</h1>
+          <nuxt-link to="/">
+            <h1 class="text-white text-xl font-bold -mt-1">GEEKMAROS</h1>
+          </nuxt-link>
         </div>
 
         <button
@@ -34,8 +36,11 @@
         <button
           class="bg-transparent border-2 border-regal-blue text-white hover:bg-hover-purple text-gray-900 rounded block font-semibold px-4 py-2 ml-2"
         >
-          <nuxt-link to="#" class="text-white hover:text-regal-blue"
-            >Resume</nuxt-link
+          <a
+            target="_blank"
+            href="https://drive.google.com/file/d/1ID5V1MNldn_TIQOd06M-pn1xls748f7I/view?usp=sharing"
+            class="text-white hover:text-regal-blue"
+            >Resume</a
           >
         </button>
       </div>
@@ -57,7 +62,11 @@
       <button
         class="bg-transparent opacity-75 border-2 border-regal-blue text-white mt-3 rounded block font-semibold text-xl px-4 py-2 mt-10"
       >
-        <nuxt-link to="#">Resume</nuxt-link>
+        <a
+          target="_blank"
+          href="https://drive.google.com/file/d/1ID5V1MNldn_TIQOd06M-pn1xls748f7I/view?usp=sharing"
+          >Resume</a
+        >
       </button>
     </div>
   </header>
