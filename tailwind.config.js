@@ -15,11 +15,11 @@ module.exports = {
     },
     extend: {
       colors: {
-        'regal-purple': '#0a192f',
+        'regal-purple': '#040817',
         'regal-blue': '#64ffda',
         'regal-pink': '#e66470',
         'brand-purple': '#42366d',
-        'aside-purple': 'rgb(23, 42, 69)',
+        'aside-purple': '#0b1330',
         'hover-purple': 'rgba(36,59,90,0.62)',
       },
       screens: {
