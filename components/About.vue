@@ -87,7 +87,7 @@ export default {
      background: url('/assets/images/official2.jpeg')
      background-size: cover
      background-blend-mode: multiply
-     box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -15px;
+     box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -15px
      z-index: 400
 
    .overlay
@@ -96,7 +96,7 @@ export default {
      height: 17rem
      background-color: rgb(100, 255, 218)
      transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s
-     opacity: 0.5
+     opacity: 0.3
      z-index: 1000
      filter: contrast(1)
 
