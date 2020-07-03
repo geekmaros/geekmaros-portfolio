@@ -6,7 +6,7 @@
       class="text-regal-blue opacity-75 font-sans text-base font-semibold lg:text-xl"
       >Hola, my name is</span
     >
-    <h1 class="text-3xl md:text-6xl lg:leading-normal text-white font-bold">
+    <h1 class="text-5xl md:text-6xl lg:leading-normal text-white font-bold">
       Abdulrasaq Mustapha.
     </h1>
     <h2
@@ -45,7 +45,7 @@
     </p>
     <a href="mailto:razicruz@gmail.com" class="focus:outline-none">
       <button
-        class="getintouch z-10 relative opacity-75 flex items-center mt-20 md:mt-10 py-3 px-5 text-white focus:outline-none hover:bg-hover-purple rounded border border-regal-blue bg-transparent font-hairline font-medium"
+        class="getintouch z-10 relative opacity-75 flex items-center mt-10 md:mt-10 py-3 px-5 text-white focus:outline-none hover:bg-hover-purple rounded border border-regal-blue bg-transparent font-hairline font-medium"
       >
         Get In Touch
 
