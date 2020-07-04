@@ -23,7 +23,7 @@
       frontend apps.
     </h2>
     <p
-      class="hero-text md:leading-2 w-auto tracking-tighter text-base text-justify md:text-left md:text-xl w-11/12 md:pr-10 lg:w-7/12 md:text-justify"
+      class="hero-text md:leading-2 w-auto tracking-tighter text-base text-justify md:text-left md:text-xl w-full md:pr-10 lg:w-7/12 md:text-justify"
     >
       I'm a Frontend Engineer with over 2 years of experience in designing and
       developing scalable websites and frontend applications. I am a

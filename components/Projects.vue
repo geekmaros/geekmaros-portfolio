@@ -10,11 +10,15 @@
       >
     </header>
 
-    <div class="project-content flex flex-col md:grid md:grid-cols-3">
+    <div
+      v-for="(tib, index) in tibs"
+      :key="`tib-${index}`"
+      class="project-content flex flex-col md:grid lg:grid-cols-3 mb-16 md:mb-12 lg:mb-10"
+    >
       <div
         class="image-wrapper relative md:col-span-2 md:row-auto w-full order-2 md:order-1"
       >
-        <img class="" src="/assets/images/doclytix.png " alt="project-images" />
+        <img class="" :src="tib.image" alt="project-images" />
         <div class="overlay w-full"></div>
       </div>
       <div
@@ -24,24 +28,26 @@
           <span class="font-sans text-base text-regal-blue"
             >Featured Project</span
           >
-          <span class="font-serif text-3xl font-bold opacity-75"
-            >Demz Analytics</span
-          >
+          <span class="font-serif text-3xl font-bold opacity-75">{{
+            tib.title
+          }}</span>
         </header>
         <p
-          class="project-summary mt-5 text-base z-10 text-right bg-aside-purple p-5 md:-ml-16 shadow-md rounded-md"
+          class="project-summary mt-5 text-base z-10 text-justify lg:-ml-16 md:text-right bg-aside-purple p-5 shadow-md rounded-md"
         >
-          Doculytix is a financial document review software where clients can
-          manage their financial documents by creating, uploading or modifying
-          existing documents.
+          {{ tib.summary }}
         </p>
         <p
-          class="font-sans text-sm tech-used ml-5 md:ml-0 self-start md:self-center mt-2 text-regal-blue"
+          class="font-sans text-sm w-full tech-used ml-2 md:ml-0 self-start md:self-center mt-2 text-regal-blue"
         >
-          <span class="md:mr-10 lg:mr-2">HTML</span>
-          <span>CSS</span>
+          <span
+            v-for="(tools, index) in tib.tools"
+            :key="`tools-${index}`"
+            class="md:mr-10 mr-2 w-full lg:mr-2"
+            >{{ tools }}</span
+          >
         </p>
-        <a href="#" class="self-end">
+        <a :href="tib.link" class="self-end">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             role="img"
@@ -68,14 +74,34 @@
 export default {
   data() {
     return {
-      technologies: [
-        'HTML & CSS(SASS)',
-        'JavaScript ES6+',
-        'Vue (Nuxtjs)',
-        'Figma',
-        'Node & MongoDb',
-        'UI & UX Design',
-        'VENOM Stack',
+      tibs: [
+        {
+          id: 'tib1',
+          title: 'Demz Analytics',
+          summary:
+            'Doculytix is a financial document review software where clients can manage their financial documents by creating, uploading or modifying existing documents.',
+          tools: ['HTML', 'CSS', 'SASS', 'JAVASCRIPT', 'VUEjs', 'Nuxtjs'],
+          link: '#',
+          image: '/assets/images/doclytix.png',
+        },
+        {
+          id: 'tib2',
+          title: 'Freyda Inc',
+          summary:
+            'Freyda is a content management solution powered by AI. Eradicating manual data entry for financial services.',
+          tools: ['HTML', 'CSS', 'JAVASCRIPT', 'VUEjs'],
+          link: '#',
+          image: '/assets/images/freydaa.png',
+        },
+        {
+          id: 'tib3',
+          title: 'Phiccify Store',
+          summary:
+            'An Online clothing store for built using React and Redux. This was a personal project i took upon myself to learn about React Framework.',
+          tools: ['HTML', 'CSS', 'JAVASCRIPT', 'REACT', 'REDUX'],
+          link: '#',
+          image: '/assets/images/phiccify.png',
+        },
       ],
     }
   },
@@ -95,20 +121,17 @@ export default {
       content: ""
       background-color: #64ffda
       transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s
-      opacity: .4
+      opacity: .2
 
     &:hover
       &::after
         transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s
         background: none
 
-
-
-
     img
       height: 100%
       position: absolute
-      object-fit: cover
+      object-fit: contain
       background-size: contain
       background-blend-mode: multiply
 
@@ -128,12 +151,29 @@ export default {
         opacity: 0.3
         background: var(--regal-blue)
 
+
+      img
+        width: 100%
+        height: 100%
+        left: 20%
+        position: absolute
+        object-fit: contain
+        background-size: contain
+        background-blend-mode: multiply
+
 @media screen and (max-width: 768px)
   section
     .project-content
       .image-wrapper
         width: 100%
         height: 269px
+        img
+          width: 100%
+          height: 100%
+          position: absolute
+          object-fit: contain
+          background-size: contain
+          background-blend-mode: multiply
 
 
 
@@ -153,4 +193,11 @@ export default {
     .project-content
       .lg\:grid-cols-3
         grid-template-columns: repeat(3,minmax(0,1fr))
+      .image-wrapper
+        img
+          height: 100%
+          position: absolute
+          object-fit: contain
+          background-size: contain
+          background-blend-mode: multiply
 </style>
