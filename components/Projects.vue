@@ -13,16 +13,16 @@
     <div
       v-for="(tib, index) in tibs"
       :key="`tib-${index}`"
-      class="project-content flex flex-col md:grid lg:grid-cols-3 mb-16 md:mb-12 lg:mb-10"
+      class="project-content flex flex-col lg:grid lg:grid-cols-3 mb-16 md:mb-12 lg:mb-10 lg:mr-20"
     >
       <div
-        class="image-wrapper relative md:col-span-2 md:row-auto w-full order-2 md:order-1"
+        class="image-wrapper relative md:col-span-2 md:row-auto w-full order-2 lg:order-1"
       >
         <img class="" :src="tib.image" alt="project-images" />
         <div class="overlay w-full"></div>
       </div>
       <div
-        class="project-detail flex flex-col text-white md:items-end order-1 mb-4 md:order-2"
+        class="project-detail flex flex-col text-white md:items-end order-1 mb-4 md:order-1"
       >
         <header class="flex flex-col items-end">
           <span class="font-sans text-base text-regal-blue"
@@ -38,7 +38,7 @@
           {{ tib.summary }}
         </p>
         <p
-          class="font-sans text-sm w-full tech-used ml-2 md:ml-0 self-start md:self-center mt-2 text-regal-blue"
+          class="font-sans lg:ml-2 text-sm w-full tech-used ml-2 md:ml-0 self-start md:self-center mt-2 text-regal-blue"
         >
           <span
             v-for="(tools, index) in tib.tools"
@@ -82,7 +82,7 @@ export default {
             'Doculytix is a financial document review software where clients can manage their financial documents by creating, uploading or modifying existing documents.',
           tools: ['HTML', 'CSS', 'SASS', 'JAVASCRIPT', 'VUEjs', 'Nuxtjs'],
           link: '#',
-          image: '/assets/images/doclytix.png',
+          image: '/assets/images/doculytix.png',
         },
         {
           id: 'tib2',
@@ -112,28 +112,23 @@ export default {
 .project-content
   .image-wrapper
     width: 100%
-    height: 369px
+    height: auto
     position: relative
-    &::after
-      width: 100%
-      height: 100%
-      position: absolute
-      content: ""
-      background-color: #64ffda
-      transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s
-      opacity: .2
+    /*&::after*/
+    /*  width: 100%*/
+    /*  height: 100%*/
+    /*  position: absolute*/
+    /*  content: ""*/
+    /*  background-color: #64ffda*/
+    /*  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s*/
+    /*  opacity: .2*/
 
-    &:hover
-      &::after
-        transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s
-        background: none
+    /*&:hover*/
+    /*  &::after*/
+    /*    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s*/
+    /*    background: none*/
 
-    img
-      height: 100%
-      position: absolute
-      object-fit: contain
-      background-size: contain
-      background-blend-mode: multiply
+
 
 
 
@@ -152,28 +147,13 @@ export default {
         background: var(--regal-blue)
 
 
-      img
-        width: 100%
-        height: 100%
-        left: 20%
-        position: absolute
-        object-fit: contain
-        background-size: contain
-        background-blend-mode: multiply
 
 @media screen and (max-width: 768px)
   section
     .project-content
       .image-wrapper
         width: 100%
-        height: 269px
-        img
-          width: 100%
-          height: 100%
-          position: absolute
-          object-fit: contain
-          background-size: contain
-          background-blend-mode: multiply
+
 
 
 
@@ -194,10 +174,4 @@ export default {
       .lg\:grid-cols-3
         grid-template-columns: repeat(3,minmax(0,1fr))
       .image-wrapper
-        img
-          height: 100%
-          position: absolute
-          object-fit: contain
-          background-size: contain
-          background-blend-mode: multiply
 </style>
