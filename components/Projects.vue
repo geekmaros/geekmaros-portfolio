@@ -3,7 +3,7 @@
     id="work"
     class="work font-serif text-xl bg-regal-purple h-auto py-24 px-5 sm:py-0 sm:px-40 md:py-16 md:px-10 lg:pl-64 lg:pr-40 lg:pt-24 lg:pb-24"
   >
-    <header class="flex justify-start items-center relative mb-6">
+    <header class="flex justify-start items-center relative mb-6 lg:mb-12">
       <span
         class="text-project font-serif text-2xl font-semibold sm:text-3xl opacity-75 text-white sm:font-semibold"
         >Things I've Built</span
@@ -13,19 +13,25 @@
     <div
       v-for="(tib, index) in tibs"
       :key="`tib-${index}`"
-      class="project-content flex flex-col lg:grid lg:grid-cols-3 mb-16 md:mb-12 lg:mb-10 lg:mr-20"
+      class="project-content flex flex-col lg:grid lg:grid-cols-3 mb-16 md:mb-12 lg:mb-24 lg:mr-20"
     >
       <div
+        :class="{ 'lg:col-start-2': (index + 1) % 2 === 0 }"
         class="image-wrapper relative md:col-span-2 md:row-auto w-full order-2 lg:order-1"
       >
         <img class="" :src="tib.image" alt="project-images" />
         <div class="overlay w-full"></div>
       </div>
       <div
+        :class="{
+          'lg:col-span-1 lg:row-start-1 lg:items-start': (index + 1) % 2 === 0,
+        }"
         class="project-detail flex flex-col text-white md:items-end order-1 mb-4 md:order-1"
       >
         <header class="flex flex-col items-end">
-          <span class="font-sans text-base text-regal-blue"
+          <span
+            :class="{ 'self-start': (index + 1) % 2 === 0 }"
+            class="font-sans text-base text-regal-blue"
             >Featured Project</span
           >
           <span class="font-serif text-3xl font-bold opacity-75">{{
@@ -33,21 +39,30 @@
           }}</span>
         </header>
         <p
-          class="project-summary mt-5 text-base z-10 text-justify lg:-ml-16 md:text-right bg-aside-purple p-5 shadow-md rounded-md"
+          :class="{
+            'lg:-mr-16 lg:ml-0 lg:text-left': (index + 1) % 2 === 0,
+            'lg:-ml-16': (index + 1) % 2 !== 0,
+          }"
+          class="project-summary mt-5 text-base flex flex-wrap z-10 text-justify md:text-right bg-aside-purple p-5 shadow-md rounded-md"
         >
           {{ tib.summary }}
         </p>
-        <p
-          class="font-sans lg:ml-2 text-sm w-full tech-used ml-2 md:ml-0 self-start md:self-center mt-2 text-regal-blue"
+        <div
+          class="font-sans lg:ml-2 text-sm w-full tech-used ml-2 flex flex-wrap md:ml-0 self-start md:self-center mt-2 text-regal-blue"
         >
-          <span
+          <p
             v-for="(tools, index) in tib.tools"
             :key="`tools-${index}`"
-            class="md:mr-10 mr-2 w-full lg:mr-2"
-            >{{ tools }}</span
+            class="md:mr-10 mr-2 lg:mr-2"
           >
-        </p>
-        <a :href="tib.link" class="self-end">
+            {{ tools }}
+          </p>
+        </div>
+        <a
+          :href="tib.link"
+          :class="{ 'self-start': (index + 1) % 2 === 0 }"
+          class="flex"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             role="img"
@@ -80,7 +95,7 @@ export default {
           title: 'Demz Analytics',
           summary:
             'Doculytix is a financial document review software where clients can manage their financial documents by creating, uploading or modifying existing documents.',
-          tools: ['HTML', 'CSS', 'SASS', 'JAVASCRIPT', 'VUEjs', 'Nuxtjs'],
+          tools: ['HTML', 'CSS', 'SASS', 'JAVASCRIPT', 'VUEjs', 'NUXTjs'],
           link: '#',
           image: '/assets/images/doculytix.png',
         },
