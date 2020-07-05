@@ -53,6 +53,7 @@
           <p
             v-for="(tools, index) in tib.tools"
             :key="`tools-${index}`"
+            :class="{ 'lg:mr-0': (index + 1) % 2 === 0 }"
             class="md:mr-10 mr-2 lg:mr-2"
           >
             {{ tools }}
@@ -60,8 +61,8 @@
         </div>
         <a
           :href="tib.link"
-          :class="{ 'self-start': (index + 1) % 2 === 0 }"
-          class="flex"
+          :class="{ 'self-start ': (index + 1) % 2 === 0 }"
+          class="flex mt-5"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
