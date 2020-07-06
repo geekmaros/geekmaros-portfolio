@@ -5,6 +5,7 @@
     <About></About>
     <Work></Work>
     <Projects></Projects>
+    <Others></Others>
   </div>
 </template>
 

@@ -5,7 +5,7 @@
   >
     <header class="flex justify-start items-center relative mb-6">
       <span
-        class="text-about font-serif text-2xl font-semibold md:text-3xl opacity-75 text-white md:font-semibold"
+        class="text-about font-serif text-2xl font-semibold md:text-3xl text-white md:font-semibold"
         >About Me</span
       >
     </header>

@@ -5,7 +5,7 @@
   >
     <header class="flex justify-start items-center relative mb-6">
       <span
-        class="text-work text-2xl font-semibold sm:text-3xl opacity-75 text-white sm:font-semibold"
+        class="text-work text-2xl font-semibold sm:text-3xl text-white sm:font-semibold"
         >Where I've Worked</span
       >
     </header>

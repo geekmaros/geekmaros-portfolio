@@ -1,11 +1,11 @@
 <template>
   <section
     id="work"
-    class="work font-serif text-xl bg-regal-purple h-auto py-24 px-5 sm:py-0 sm:px-40 md:py-16 md:px-10 lg:pl-64 lg:pr-40 lg:pt-24 lg:pb-24"
+    class="work font-serif text-xl bg-regal-purple h-auto py-24 px-5 sm:py-0 sm:px-40 md:py-16 md:px-10 lg:pl-64 lg:pr-40 lg:pt-24"
   >
     <header class="flex justify-start items-center relative mb-6 lg:mb-12">
       <span
-        class="text-project font-serif text-2xl font-semibold sm:text-3xl opacity-75 text-white sm:font-semibold"
+        class="text-project font-serif text-2xl font-semibold sm:text-3xl text-white sm:font-semibold"
         >Things I've Built</span
       >
     </header>
@@ -34,9 +34,11 @@
             class="font-sans text-base text-regal-blue"
             >Featured Project</span
           >
-          <span class="font-serif text-3xl font-bold opacity-75">{{
-            tib.title
-          }}</span>
+          <span
+            :class="{ 'self-start': (index + 1) % 2 === 0 }"
+            class="font-serif text-3xl font-bold opacity-75"
+            >{{ tib.title }}</span
+          >
         </header>
         <p
           :class="{
