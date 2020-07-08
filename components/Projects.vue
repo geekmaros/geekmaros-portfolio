@@ -45,7 +45,7 @@
             'lg:-mr-16 lg:ml-0 lg:text-left': (index + 1) % 2 === 0,
             'lg:-ml-16': (index + 1) % 2 !== 0,
           }"
-          class="project-summary mt-5 text-base flex flex-wrap z-10 text-justify md:text-right bg-aside-purple p-5 shadow-md rounded-md"
+          class="project-summary mt-5 text-base flex flex-wrap tracking-wider z-10 text-justify md:text-right bg-aside-purple p-5 shadow-md rounded-md"
         >
           {{ tib.summary }}
         </p>

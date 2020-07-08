@@ -1,6 +1,6 @@
 <template>
   <header
-    class="h-16 z-50 md:h-20 lg:h-20 z-10 w-full fixed shadow items-center bg-regal-purple px-4 py-1"
+    class="h-16 -mt-1 z-50 md:h-20 lg:h-20 z-10 w-full fixed shadow items-center bg-regal-purple px-4 py"
   >
     <div class="cursor"></div>
     <nav

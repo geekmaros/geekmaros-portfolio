@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full overflow-x-hidden">
+  <div class="overflow-x-hidden overflow-y-hidden">
     <nuxt />
   </div>
 </template>
