@@ -25,7 +25,7 @@
       <div
         v-for="(activity, index) in activities"
         :key="`activity-${index}`"
-        class="card bg-aside-purple shadow-md pl-5 pt-5 pb-10 pr-4 break-all rounded-lg cursor-pointer relative transform hover:-translate-y-3 transition duration-500 ease-in-out"
+        class="card bg-aside-purple shadow-md pl-5 pt-5 pb-10 pr-4 rounded-lg cursor-pointer relative transform hover:-translate-y-3 transition duration-500 ease-in-out"
       >
         <div class="card-title flex justify-between items-center">
           <a :href="activity.githubLink" target="_blank" class="flex">
@@ -67,16 +67,18 @@
         >
           {{ activity.name }}
         </header>
-        <p class="summary tracking-wider text-white text-base mt-8 md:mt-4">
+        <p
+          class="summary font-medium leading-loose text-justify md:text-left font-sans text-white text-base mt-8 md:mt-4"
+        >
           {{ activity.summary }}
         </p>
 
-        <div class="bottom-0 mb-10 absolute md:bottom-0 md:mb-5">
+        <div class="bottom-0 mb-10 md:bottom-0 md:mb-5">
           <div class="flex flex-wrap">
             <p
               v-for="(keyword, i) in activity.keywords"
               :key="`keyword-${i}`"
-              class="keywords text-sm text-regal-blue break-all mt-4 mr-5"
+              class="keywords text-sm text-regal-blue mt-4 mr-5"
             >
               {{ keyword }}
             </p>
@@ -141,6 +143,6 @@ export default {
 
 <style scoped lang="scss">
 .card {
-  height: 400px;
+  height: auto;
 }
 </style>
