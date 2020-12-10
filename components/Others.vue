@@ -1,7 +1,7 @@
 <template>
   <section
     id="work"
-    class="work font-serif text-xl bg-regal-purple h-auto py-24 px-5 sm:py-0 sm:px-40 md:py-16 md:px-10 lg:px-64 lg:pt-24 lg:pb-24"
+    class="work font-serif text-xl bg-regal-purple h-auto py-24 px-5 sm:py-0 sm:px-40 md:py-16 md:px-10 lg:px-48 lg:pt-24 lg:pb-24"
   >
     <header
       class="text-center justify-center items-center relative mb-6 lg:mb-16"
@@ -94,6 +94,14 @@ export default {
   data() {
     return {
       activities: [
+        {
+          name: 'Tandem Trivia Question (Quiz app)',
+          summary:
+            'Test your General Knowledge skills by answering 10 random questions',
+          keywords: ['Quiz app', 'Vuejs', 'CSS3'],
+          githubLink: 'https://github.com/geekmaros/tandem',
+          liveSite: 'http://tandemtrivia.vercel.app/',
+        },
         {
           name: 'Vue Movie Search',
           summary:
