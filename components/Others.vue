@@ -68,7 +68,7 @@
           {{ activity.name }}
         </header>
         <p
-          class="summary font-medium leading-loose text-justify md:text-left font-sans text-white text-base mt-8 md:mt-4"
+          class="summary font-medium leading-loose text-base lg:text-sm text-justify md:text-left font-sans text-white text-base mt-8 md:mt-4"
         >
           {{ activity.summary }}
         </p>
