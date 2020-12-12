@@ -6,6 +6,7 @@
     <Work></Work>
     <Projects></Projects>
     <Others></Others>
+    <Contact></Contact>
   </div>
 </template>
 
