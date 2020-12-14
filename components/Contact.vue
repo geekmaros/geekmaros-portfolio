@@ -12,7 +12,7 @@
         Want me to jump on your next project?
       </p>
       <span
-        class="text-project mt-3 font-serif self-center text-2xl lg:text-4xl font-semibold sm:text-3xl text-white sm:font-semibold"
+        class="text-project mt-3 font-serif self-center text-2xl lg:text-4xl font-semibold sm:text-3xl text-white"
         >Get In Touch</span
       >
       <p class="text-white mt-3 text-xl lg:max-w-3xl mx-auto">
