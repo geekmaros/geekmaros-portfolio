@@ -103,6 +103,15 @@ export default {
           liveSite: 'http://tandemtrivia.vercel.app/',
         },
         {
+          name: 'Dynamically Add/Remove input fields using Vuejs',
+          summary:
+            "We all know how awesome Vuejs is as a frontend frame work and we are going to be exploring one of it's awesomeness by showing how to dynamically add or remove fields.",
+          keywords: ['Article', 'Vuejs', 'Tailwind', 'Hashnode'],
+          githubLink: '#',
+          liveSite:
+            'https://geekmaros.hashnode.dev/dynamically-addremove-input-fields-using-vuejs-ckhottr8o052ieks14uk41fhp',
+        },
+        {
           name: 'Vue Movie Search',
           summary:
             'Vue movie search is a simple web application for checking out latest and recent movie release. This was my first ever Vuejs project .',
