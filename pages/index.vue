@@ -7,6 +7,7 @@
     <Projects></Projects>
     <Others></Others>
     <Contact></Contact>
+    <Footer></Footer>
   </div>
 </template>
 
