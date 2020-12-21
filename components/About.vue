@@ -64,6 +64,7 @@ export default {
         'JavaScript ES6+',
         'Vue (Nuxtjs)',
         'Figma',
+        'TailwindCSS',
         'Node & MongoDb',
         'UI & UX Design',
         'VENOM Stack',
