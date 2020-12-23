@@ -8,6 +8,7 @@
     <Others></Others>
     <Contact></Contact>
     <Footer></Footer>
+    <SocialMediaProfile></SocialMediaProfile>
   </div>
 </template>
 
