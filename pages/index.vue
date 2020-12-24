@@ -7,8 +7,8 @@
     <Projects></Projects>
     <Others></Others>
     <Contact></Contact>
-    <Footer></Footer>
     <SocialMediaProfile></SocialMediaProfile>
+    <Footer></Footer>
   </div>
 </template>
 

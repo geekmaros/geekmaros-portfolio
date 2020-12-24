@@ -22,6 +22,9 @@ module.exports = {
         'aside-purple': 'rgb(23, 42, 69)',
         'hover-purple': 'rgba(36,59,90,0.62)',
       },
+      rotate: {
+        360: '360deg',
+      },
       screens: {
         // xl: '1280px',
         // // => @media (max-width: 1279px) { ... }
