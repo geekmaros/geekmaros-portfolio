@@ -1,7 +1,7 @@
 <template>
-  <section class="md:fixed bottom-0 md:pl-5 lg:pl-10 md:mb-40">
+  <section class="md:fixed bottom-0 md:pl-5 lg:pl-3 md:mb-40">
     <ul class="flex w-full justify-between items-center md:block px-10 mb-10">
-      <li class="github md:mb-5 ">
+      <li class="github md:mb-8 ">
         <a href="https://github.com/geekmaros" class="">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -18,7 +18,7 @@
           </svg>
         </a>
       </li>
-      <li class="twitter md:mb-5">
+      <li class="twitter md:mb-8">
         <a href="https://twitter.com/geekmaros">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -35,7 +35,7 @@
           </svg>
         </a>
       </li>
-      <li class="linkedIn md:mb-5">
+      <li class="linkedIn md:mb-8">
         <a href="https://www.linkedin.com/in/maros94/">
           <svg
             xmlns="http://www.w3.org/2000/svg"

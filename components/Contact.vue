@@ -1,7 +1,7 @@
 <template>
   <section
     id="contact"
-    class="work font-serif text-xl bg-regal-purple h-auto py-24 px-5 sm:py-0 sm:px-40 md:py-16 md:px-10 lg:px-48 lg:pt-24 lg:pb-24"
+    class="work font-serif text-xl bg-regal-purple h-auto pt-24 pb-10 px-5 sm:py-0 sm:px-40 md:py-16 md:px-10 lg:px-48 lg:pt-24 lg:pb-24"
   >
     <header
       class="text-center justify-center items-center relative mb-6 lg:mb-16"
