@@ -1,5 +1,5 @@
 <template>
-  <section class="md:fixed bottom-0 md:pl-5 lg:pl-3 md:mb-40">
+  <section class="md:fixed bottom-0 md:pl-5 lg:pl-3 md:mb-40 z-50">
     <ul class="flex w-full justify-between items-center md:block px-10 mb-10">
       <li class="github md:mb-8 ">
         <a href="https://github.com/geekmaros" class="">
