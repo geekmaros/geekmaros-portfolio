@@ -15,7 +15,7 @@
         class="text-project mt-3 font-serif self-center text-2xl lg:text-4xl font-semibold sm:text-3xl text-white"
         >Get In Touch</span
       >
-      <p class="text-white mt-3 text-xl lg:max-w-3xl mx-auto">
+      <p class="text-white mt-3 text-base md:text-xl lg:max-w-3xl mx-auto">
         I am currently open to new job opportunities. If you think I am awesome
         enough to be a value-able member of your team, mentoring or just wanna
         say hi, kindly click the button below or send an email to
