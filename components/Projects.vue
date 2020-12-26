@@ -94,6 +94,15 @@ export default {
     return {
       tibs: [
         {
+          id: 'tib3',
+          title: 'Jadek Farms',
+          summary:
+            'Jadek Farms is an Agro-Tech company that is helping solve problems of financial inclusion as a way to alleviate poverty and empower low income earners across Africa.',
+          tools: ['Javascript', 'Vuejs', 'Nuxtjs', 'TailwindCSS'],
+          link: 'https://jadekfarms.com/',
+          image: '/assets/images/jadekfull.png',
+        },
+        {
           id: 'tib1',
           title: 'Demz Analytics',
           summary:
@@ -103,22 +112,30 @@ export default {
           image: '/assets/images/doculytix.png',
         },
         {
-          id: 'tib2',
-          title: 'Freyda Inc',
+          id: 'tib4',
+          title: 'Sash',
           summary:
-            'Freyda is a content management solution powered by AI. Eradicating manual data entry for financial services.',
-          tools: ['HTML', 'CSS', 'JAVASCRIPT', 'VUEjs'],
-          link: '#',
-          image: '/assets/images/freydaa.png',
+            'Sash is a modern conversational commerce app for merchants.',
+          tools: ['Javascript', 'Vuejs', 'Nuxtjs', 'TailwindCSS'],
+          link: 'http://getsash.com/',
+          image: '/assets/images/getsashfull.png',
         },
         {
-          id: 'tib3',
-          title: 'Phiccify Store',
+          id: 'tib6',
+          title: 'Invest Mansaa',
+          summary: 'Sash modern conversational commerce app for merchants.',
+          tools: ['Javascript', 'Vuejs', 'Nuxtjs', 'TailwindCSS'],
+          link: 'http://investmaansa.com/',
+          image: '/assets/images/investmaansafull.png',
+        },
+        {
+          id: 'tib5',
+          title: 'Estatevest',
           summary:
-            'An Online clothing store for built using React and Redux. This was a personal project i took upon myself to learn about React Framework.',
-          tools: ['HTML', 'CSS', 'JAVASCRIPT', 'REACT', 'REDUX'],
-          link: '#',
-          image: '/assets/images/phiccify.png',
+            'EstateVest is a real estate, property development and investment brand; a brainchild of Jadek Agro Connect.',
+          tools: ['HTML5', 'CSS3', 'Javascript'],
+          link: 'https://estatevest.ng/',
+          image: '/assets/images/estatevestfull.png',
         },
       ],
     }
