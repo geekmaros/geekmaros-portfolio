@@ -9,7 +9,13 @@
       <div class="w-full h-full flex items-center justify-between flex-wrap">
         <div class="image-container lg:-mt-2">
           <nuxt-link to="/">
-            <h1 class="text-white text-xl font-bold -mt-1">GEEKMAROS</h1>
+            <h1
+              class="text-white text-3xl font-bold -mt-1 text-regal-blue hover:text-regal-pink"
+            >
+              GEEK<span class="text-regal-pink hover:text-regal-blue"
+                >MAROS</span
+              >
+            </h1>
           </nuxt-link>
         </div>
 
