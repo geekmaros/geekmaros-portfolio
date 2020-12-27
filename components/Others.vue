@@ -103,7 +103,7 @@ export default {
           liveSite: 'http://tandemtrivia.vercel.app/',
         },
         {
-          name: 'Dynamically Add/Remove input fields using Vuejs',
+          name: 'Dynamically Add/Remove input fields using Vue.js',
           summary:
             "We all know how awesome Vuejs is as a frontend frame work and we are going to be exploring one of it's awesomeness by showing how to dynamically add or remove fields.",
           keywords: ['Article', 'Vuejs', 'Tailwind', 'Hashnode'],
