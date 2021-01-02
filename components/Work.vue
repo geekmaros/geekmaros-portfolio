@@ -120,6 +120,26 @@ export default {
       ],
       places: [
         {
+          role: 'Frontend Engineer',
+          employer: 'GenSports',
+          date: 'Nov 2020 - Present',
+          tasks: [
+            'Built custom media components to interact with uploads served from the Backend.',
+            'Improved the user experience by implementing various user centered features and intuitive design.',
+            'Improved legacy codebase..',
+          ],
+        },
+        {
+          role: 'Frontend Developer',
+          employer: 'GenSports',
+          date: 'Nov 2020 - Present',
+          tasks: [
+            'Built custom media components to interact with uploads served from the Backend.',
+            'Improved the user experience by implementing various user centered features and intuitive design.',
+            'Improved legacy codebase..',
+          ],
+        },
+        {
           role: 'Frontend Developer',
           employer: 'Demz Analytics',
           date: 'Nov 2019 - Feb 2020',
