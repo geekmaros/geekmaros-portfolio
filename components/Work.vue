@@ -113,6 +113,8 @@ export default {
   data() {
     return {
       placess: [
+        'GenSports',
+        'Jadek Inc',
         'Demz Analytics',
         'Freyda Inc',
         'Al-Hikmah University',
@@ -131,12 +133,12 @@ export default {
         },
         {
           role: 'Frontend Developer',
-          employer: 'GenSports',
-          date: 'Nov 2020 - Present',
+          employer: 'Jadek Inc',
+          date: 'May 2020 - December 2020',
           tasks: [
-            'Built custom media components to interact with uploads served from the Backend.',
-            'Improved the user experience by implementing various user centered features and intuitive design.',
-            'Improved legacy codebase..',
+            'Developed a rich user interface dashboard to track farm investments.',
+            'Improved app by building a mobile responsive feature and optimized speed for better user experience.',
+            'Worked closely with UI mockup designs to implement pixel by pixel ',
           ],
         },
         {
