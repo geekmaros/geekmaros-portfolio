@@ -34,14 +34,14 @@
           v-for="link in navLink"
           :key="link.id"
           :to="`${link.to}`"
-          class="block font-serif rounded-full text-white text-white hover:text-regal-blue font-medium px-2 py-1 mt-0 ml-2"
+          class="block font-serif rounded-full text-white text-white hover:text-regal-blue font-medium px-2 py-1 mt-0 ml-6"
         >
           <!--          <span class="font-mono">{{ 1 + i++ }}.</span>-->
           {{ link.name }}</nuxt-link
         >
 
         <button
-          class="bg-transparent border-2 border-regal-blue text-white hover:bg-hover-purple text-gray-900 rounded block font-semibold px-4 py-2 ml-2"
+          class="bg-transparent border-2 border-regal-blue text-white hover:bg-hover-purple text-gray-900 rounded block font-semibold px-4 py-2 ml-6"
         >
           <a
             target="_blank"
@@ -71,7 +71,7 @@
       >
         <a
           target="_blank"
-          href="https://drive.google.com/file/d/1ID5V1MNldn_TIQOd06M-pn1xls748f7I/view?usp=sharing"
+          href="https://drive.google.com/file/d/19V1sPlDXWhp1kLdH659Fa-7BfpzzSngn/view?usp=sharing"
           >Resume</a
         >
       </button>
@@ -105,6 +105,11 @@ export default {
           id: '4nl',
           name: 'Contact',
           to: '#contact',
+        },
+        {
+          id: '5nl',
+          name: 'Blog',
+          to: 'https://geekmaros.hashnode.dev/',
         },
       ],
     }
