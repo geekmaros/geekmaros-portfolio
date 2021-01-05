@@ -45,7 +45,7 @@
         >
           <a
             target="_blank"
-            href="https://drive.google.com/file/d/19V1sPlDXWhp1kLdH659Fa-7BfpzzSngn/view?usp=sharing"
+            href="https://drive.google.com/file/d/1ZTvOBtwf4sheCIzX4f8mEZZqOcM2sK_z/view?usp=sharing"
             class="text-white hover:text-regal-blue"
             >Resume</a
           >
@@ -71,7 +71,7 @@
       >
         <a
           target="_blank"
-          href="https://drive.google.com/file/d/19V1sPlDXWhp1kLdH659Fa-7BfpzzSngn/view?usp=sharing"
+          href="https://drive.google.com/file/d/1ZTvOBtwf4sheCIzX4f8mEZZqOcM2sK_z/view?usp=sharing"
           >Resume</a
         >
       </button>
