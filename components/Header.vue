@@ -40,6 +40,15 @@
           {{ link.name }}</nuxt-link
         >
 
+        <a
+          target='_blank'
+          href="https://geekmaros.hashnode.dev/"
+          class="block font-serif rounded-full text-white text-white hover:text-regal-blue font-medium px-2 py-1 mt-0 ml-6"
+        >
+          <!--          <span class="font-mono">{{ 1 + i++ }}.</span>-->
+          Blog</a
+        >
+
         <button
           class="bg-transparent border-2 border-regal-blue text-white hover:bg-hover-purple text-gray-900 rounded block font-semibold px-4 py-2 ml-6"
         >
@@ -65,6 +74,11 @@
         class="block rounded-full text-white text-white font-semibold hover:text-regal-blue text-xl font-medium px-2 py-5 items-center text-center"
         >{{ link.name }}</nuxt-link
       >
+      <a
+        target='_blank'
+        href="https://geekmaros.hashnode.dev/"
+        class="block rounded-full text-white text-white font-semibold hover:text-regal-blue text-xl font-medium px-2 py-5 items-center text-center"
+      >Blog</a>
 
       <button
         class="bg-transparent opacity-75 border-2 border-regal-blue text-white mt-3 rounded block font-semibold text-xl px-4 py-2 mt-10"
@@ -106,11 +120,11 @@ export default {
           name: 'Contact',
           to: '#contact',
         },
-        {
-          id: '5nl',
-          name: 'Blog',
-          to: 'https://geekmaros.hashnode.dev/',
-        },
+        // {
+        //   id: '5nl',
+        //   name: 'Blog',
+        //   to: 'https://geekmaros.hashnode.dev/',
+        // },
       ],
     }
   },
