@@ -53,7 +53,7 @@
         </a>
       </li>
       <li class="youtube">
-        <a href="#">
+        <a href="https://www.youtube.com/channel/UC7VH99sMB5_ohKptI_7r_Qw" target="_blank">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
