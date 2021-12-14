@@ -60,7 +60,7 @@ export default {
   data() {
     return {
       technologies: [
-        'HTML & CSS(SASS)',
+        'HTML & CSS(SASS/SCSS)',
         'JavaScript ES6+',
         'Vue (Nuxtjs)',
         'Figma',
