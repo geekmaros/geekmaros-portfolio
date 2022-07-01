@@ -54,7 +54,7 @@
         >
           <a
             target="_blank"
-            href="https://drive.google.com/file/d/1ZTvOBtwf4sheCIzX4f8mEZZqOcM2sK_z/view?usp=sharing"
+            href="https://docs.google.com/document/d/1DBMLaXaDsFIDFKdE0RsZl90AtGuCgRgo_Et6Tj-uZ9Y/edit?usp=sharing"
             class="text-white hover:text-regal-blue"
             >Resume</a
           >
