@@ -25,23 +25,9 @@
     <p
       class="hero-text md:leading-2 w-auto tracking-tighter text-base text-justify md:text-left md:text-xl w-full md:pr-10 lg:w-7/12 md:text-justify"
     >
-      I'm a Frontend Developer with over 2 years of experience in designing and
-      developing scalable websites and frontend applications. I am a
-      <a
-        href="https://vuejs.org/"
-        title="My Favourite FE framework"
-        target="_blank"
-        class="underline text-regal-blue"
-        >Vue.js</a
-      >
-      nerd and advocate. You will always find me talking about utility-first CSS
-      such as
-      <a
-        href="https://tailwindcss.com/"
-        target="_blank"
-        class="underline text-regal-blue"
-        >Tailwind CSS</a
-      >.
+      I am an Inventive, Creative and Enthusiastic Frontend Engineer with 3+ years utilizing web technologies to
+      design and develop digital solutions[products] for start-ups and businesses. 
+      I am driven by the goal to always deliver top-notch products ensuring technologies help businesses achieve their goals.
     </p>
     <a href="mailto:razicruz@gmail.com" class="focus:outline-none">
       <button
