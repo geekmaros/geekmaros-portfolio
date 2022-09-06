@@ -76,15 +76,6 @@ export default {
         name: 'twitter:image',
         content: 'https://res.cloudinary.com/geekmaros/image/upload/v1662504729/Official_Two.jpg',
       },
-      {
-
-        name: 'og:image:width',
-        content: '1200',
-      },
-      {
-        name: 'og:image:height',
-        content: '630',
-      },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
