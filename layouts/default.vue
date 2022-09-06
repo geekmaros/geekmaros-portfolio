@@ -38,7 +38,7 @@ export default {
         {
           hid: "twitter:image",
           name: 'twitter:image',
-          content: ogImage,
+          content: 'https://res.cloudinary.com/geekmaros/image/upload/v1662504729/Official_Two.jpg',
         },
         {
 

@@ -69,12 +69,12 @@ export default {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: 'assets/images/Official Two.jpg',
+        content: 'https://res.cloudinary.com/geekmaros/image/upload/v1662504729/Official_Two.jpg',
       },
       {
         hid: "twitter:image",
         name: 'twitter:image',
-        content: '/assets/images/Official Two.jpg',
+        content: 'https://res.cloudinary.com/geekmaros/image/upload/v1662504729/Official_Two.jpg',
       },
       {
 
