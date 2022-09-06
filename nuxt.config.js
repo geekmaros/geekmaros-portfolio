@@ -30,17 +30,6 @@ export default {
         content: 'Abdulrasaq Mustapha - Geekmaros',
       },
       {
-        hid: 'twitter:title',
-        name: 'twitter:title',
-        content: 'Abdulrasaq Mustapha - Geekmaros',
-      },
-      {
-        hid: 'twitter:description',
-        name: 'twitter:description',
-        content:
-          'Geekmaros is a Frontend Engineer who specialises in building digital product and experiences',
-      },
-      {
         property: 'og:site_name',
         content: 'Abdulrasaq Mustapha - Geekmaros',
       },

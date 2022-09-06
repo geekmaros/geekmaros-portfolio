@@ -11,27 +11,36 @@ export default {
     return {
       meta: [
         {
+          name: 'twitter:title',
+          content: 'Abdulrasaq Mustapha - Geekmaros',
+        },
+        {
+          name: 'twitter:description',
+          content:
+            'Geekmaros is a Frontend Engineer who specialises in building digital product and experiences',
+        },
+        {
           hid: 'og:image',
           property: 'og:image',
           content: ogImage,
         },
         {
-          hid: 'twitter:image',
-          property: 'twitter:image',
+          name: 'twitter:image',
           content: ogImage,
         },
         {
-          property: 'og:image:width',
+          name: 'og:image:width',
           content: '1200',
         },
         {
-          property: 'og:image:height',
+          name: 'og:image:height',
           content: '630',
         },
         {
-          property: 'twitter:card',
+          name: 'twitter:card',
           content: 'summary_large_image',
         },
+
       ],
     }
   },
