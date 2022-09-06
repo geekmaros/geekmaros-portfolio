@@ -85,8 +85,9 @@ export default {
      height: 17rem
      position: absolute
      object-fit: cover
-     background: url('/assets/images/official2.jpeg')
+     background: url('/assets/images/Official One.jpg')
      background-size: cover
+     background-position: center
      background-blend-mode: multiply
      box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -15px
      z-index: 400

@@ -39,6 +39,9 @@
               {{ place.role }}
               <span class="text-regal-blue">@ {{ place.employer }}</span>
             </h3>
+            <span class="date font-sans text-white text-sm block">{{
+                place.location
+              }}</span>
             <span class="date font-sans text-white text-sm">{{
               place.date
             }}</span>
@@ -70,8 +73,8 @@
       >
         <div
           v-for="(place, i) in places"
-          :key="`place-det-${i}`"
           v-show="activeTab === i"
+          :key="`place-det-${i}`"
           class="sub bg-aside-purple sm:bg-transparent sm:mt-0 rounded-md p-3"
         >
           <div class="sub-heading">
@@ -79,6 +82,9 @@
               {{ place.role }}
               <span class="text-regal-blue">@ {{ place.employer }}</span>
             </h3>
+            <span class="date font-sans text-white block text-sm">{{
+                place.location
+              }}</span>
             <span class="date font-sans text-white text-sm">{{
               place.date
             }}</span>
@@ -113,6 +119,7 @@ export default {
   data() {
     return {
       placess: [
+        'Linkfire',
         'GenSports',
         'Jadek Inc',
         'Demz Analytics',
@@ -122,9 +129,21 @@ export default {
       ],
       places: [
         {
+          role: 'Frontend Engineer II',
+          employer: 'Linkfire',
+          date: 'Aug 2021 - Jun 2022',
+          location: 'Copenhagen, Denmark',
+          tasks: [
+            'Built custom media components to interact with uploads served from the Backend.',
+            'Improved the user experience by implementing various user centered features and intuitive design.',
+            'Improved legacy codebase..',
+          ],
+        },
+        {
           role: 'Frontend Engineer',
           employer: 'GenSports',
           date: 'Nov 2020 - Present',
+          location: 'Lagos, Nigeria',
           tasks: [
             'Built custom media components to interact with uploads served from the Backend.',
             'Improved the user experience by implementing various user centered features and intuitive design.',
@@ -135,6 +154,7 @@ export default {
           role: 'Frontend Developer',
           employer: 'Jadek Inc',
           date: 'May 2020 - December 2020',
+          location: 'Lagos, Nigeria',
           tasks: [
             'Developed a rich user interface dashboard to track farm investments.',
             'Improved app by building a mobile responsive feature and optimized speed for better user experience.',
@@ -145,6 +165,7 @@ export default {
           role: 'Frontend Developer',
           employer: 'Demz Analytics',
           date: 'Nov 2019 - Feb 2020',
+          location: 'London, United Kingdom',
           tasks: [
             'Developed and maintained code for clientside dashboard usingHTML, CSS, SASS, Javascript and Vuejs.',
             'Integrating with RESTful APIs as a part of implementing Authentication and other third parties APIs.',
@@ -156,6 +177,7 @@ export default {
           role: 'Frontend Developer',
           employer: 'Freyda Inc.',
           date: 'Aug 2019 - October 2019',
+          location: 'London, United Kingdom',
           tasks: [
             'Converted UI mockup design to web templates.',
             'Refined and improved the existing frontend code and design to meet the UI mockup design.',
@@ -167,6 +189,7 @@ export default {
           role: 'Systems Programmer II',
           employer: 'Al-Hikmah University',
           date: 'July 2018 - April 2020',
+          location: 'Kwara, Nigeria',
           tasks: [
             'Improved existing University’s website and Webometrics.',
             'Developed a new feature to automate admission process for Faculty of  Post Graduate Schools.',
@@ -177,6 +200,7 @@ export default {
           role: 'Web Developer Intern',
           employer: 'WebRelated Consulting',
           date: 'Aug 2017 - Dec 2017',
+          location: 'Lagos, Nigeria',
           tasks: [
             'Worked on various client project as an Intern',
             'Did everything expected from an Intern',

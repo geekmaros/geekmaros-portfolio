@@ -4,14 +4,55 @@ export default {
    ** Headers of the page
    */
   head: {
-    title: process.env.npm_package_name || '',
+    title: 'Abdulrasaq Mustapha - Geekmaros',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || '',
+        content:
+          'Geekmaros is a Frontend Engineer who specialises in building digital product and experiences',
+      },
+      {
+        hid: 'og:title',
+        property: 'og:title',
+        content: 'Abdulrasaq Mustapha - Geekmaros',
+      },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content:
+          'Geekmaros is a Frontend Engineer who specialises in building digital product and experiences',
+      },
+      {
+        name: 'twitter:site',
+        content: 'Abdulrasaq Mustapha - Geekmaros',
+      },
+      {
+        hid: 'twitter:title',
+        name: 'twitter:title',
+        content: 'Abdulrasaq Mustapha - Geekmaros',
+      },
+      {
+        hid: 'twitter:description',
+        name: 'twitter:description',
+        content:
+          'Geekmaros is a Frontend Engineer who specialises in building digital product and experiences',
+      },
+      {
+        property: 'og:site_name',
+        content: 'Abdulrasaq Mustapha - Geekmaros',
+      },
+      {
+        hid: 'og:type',
+        property: 'og:type',
+        content: 'Geekmaros Portfolio',
+      },
+      {
+        hid: 'og:url',
+        property: 'og:url',
+        content: 'https://geekmaros.netlify.app/',
       },
     ],
     link: [
