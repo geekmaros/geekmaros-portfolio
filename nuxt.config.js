@@ -18,7 +18,7 @@ export default {
       {
         hid: 'og:title',
         property: 'og:title',
-        content: 'Abdulrasaq Mustapha - Geekmaros',
+        content: 'Abdulrasaq | Frontend Engineer - Geekmaros',
       },
       {
         hid: 'og:description',
@@ -28,11 +28,11 @@ export default {
       },
       {
         name: 'twitter:site',
-        content: 'Abdulrasaq Mustapha - Geekmaros',
+        content: 'Abdulrasaq | Frontend Engineer - Geekmaros',
       },
       {
         property: 'og:site_name',
-        content: 'Abdulrasaq Mustapha - Geekmaros',
+        content: 'Abdulrasaq | Frontend Engineer - Geekmaros',
       },
       {
         hid: 'og:type',
