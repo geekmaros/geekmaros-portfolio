@@ -38,11 +38,6 @@ export default {
         property: 'og:type',
         content: 'Geekmaros Portfolio',
       },
-      {
-        hid: 'og:url',
-        property: 'og:url',
-        content: 'https://geekmaros.netlify.app/',
-      },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },

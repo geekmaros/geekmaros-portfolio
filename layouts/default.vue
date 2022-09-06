@@ -20,6 +20,11 @@ export default {
             'Geekmaros is a Frontend Engineer who specialises in building digital product and experiences',
         },
         {
+          hid: 't-type',
+          name: 'twitter:card',
+          content: 'summary_large_image',
+        },
+        {
           hid: 'og:image',
           property: 'og:image',
           content: ogImage,
@@ -36,10 +41,7 @@ export default {
           name: 'og:image:height',
           content: '630',
         },
-        {
-          name: 'twitter:card',
-          content: 'summary_large_image',
-        },
+
 
       ],
     }
