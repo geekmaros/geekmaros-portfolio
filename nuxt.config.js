@@ -1,4 +1,3 @@
-import ogImage from "static/assets/images/Official Two.jpg";
 
 export default {
   mode: 'universal',
@@ -70,12 +69,12 @@ export default {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: ogImage,
+        content: 'assets/images/Official Two.jpg',
       },
       {
         hid: "twitter:image",
         name: 'twitter:image',
-        content: ogImage,
+        content: '/assets/images/Official Two.jpg',
       },
       {
 
