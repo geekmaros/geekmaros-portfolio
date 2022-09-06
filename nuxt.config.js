@@ -5,7 +5,7 @@ export default {
    ** Headers of the page
    */
   head: {
-    title: 'Abdulrasaq Mustapha - Geekmaros',
+    title: 'Abdulrasaq | Frontend Engineer - Geekmaros',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -39,32 +39,56 @@ export default {
         property: 'og:type',
         content: 'Geekmaros Portfolio',
       },
+      {
+        property: 'fb:profile_id',
+        content: 'geekmaros',
+      },
+      {
+        property: 'og:see_also',
+        content: 'https://www.linkedin.com/in/maros94/',
+      },
+      {
+        property: 'og:see_also',
+        content: 'https://github.com/geekmaros',
+      },
+      {
+        property: 'og:see_also',
+        content: 'https://twitter.com/geekmaros',
+      },
+      {
+        property: 'og:see_also',
+        content: 'https://www.instagram.com/geekmaros/',
+      },
+      {
+        property: 'og:see_also',
+        content: 'https://www.youtube.com/channel/UC7VH99sMB5_ohKptI_7r_Qw?view_as=subscriber',
+      },
 
     //  copied from default
-      {
-        name: 'twitter:site',
-        content: '@geekmaros',
-      },
-      {
-        name: 'twitter:card',
-        content: 'summary_large_image',
-      },
-      {
-        hid: "twitter:url",
-        name: "twitter:url",
-        content: "https://geekmaros.netlify.app",
-      },
-      {
-        hid: "twitter:title",
-        name: 'twitter:title',
-        content: 'Abdulrasaq Mustapha - Geekmaros',
-      },
-      {
-        hid: "twitter:description",
-        name: 'twitter:description',
-        content:
-          'Geekmaros is a Frontend Engineer who specialises in building digital product and experiences',
-      },
+    //   {
+    //     name: 'twitter:site',
+    //     content: '@geekmaros',
+    //   },
+    //   {
+    //     name: 'twitter:card',
+    //     content: 'summary_large_image',
+    //   },
+    //   {
+    //     hid: "twitter:url",
+    //     name: "twitter:url",
+    //     content: "https://geekmaros.netlify.app",
+    //   },
+      // {
+      //   hid: "twitter:title",
+      //   name: 'twitter:title',
+      //   content: 'Abdulrasaq Mustapha - Geekmaros',
+      // },
+      // {
+      //   hid: "twitter:description",
+      //   name: 'twitter:description',
+      //   content:
+      //     'Geekmaros is a Frontend Engineer who specialises in building digital product and experiences',
+      // },
 
       {
         hid: 'og:image',
@@ -72,10 +96,20 @@ export default {
         content: 'https://res.cloudinary.com/geekmaros/image/upload/v1662504729/Official_Two.jpg',
       },
       {
-        hid: "twitter:image",
-        name: 'twitter:image',
-        content: 'https://res.cloudinary.com/geekmaros/image/upload/v1662504729/Official_Two.jpg',
+        hid: 'og:image:width',
+        property: 'og:image:width',
+        content: '160',
       },
+      {
+        hid: 'og:image:height',
+        property: 'og:image:height',
+        content: '160',
+      },
+      // {
+      //   hid: "twitter:image",
+      //   name: 'twitter:image',
+      //   content: 'https://res.cloudinary.com/geekmaros/image/upload/v1662504729/Official_Two.jpg',
+      // },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
