@@ -65,30 +65,30 @@ export default {
       },
 
     //  copied from default
-    //   {
-    //     name: 'twitter:site',
-    //     content: '@geekmaros',
-    //   },
-    //   {
-    //     name: 'twitter:card',
-    //     content: 'summary_large_image',
-    //   },
-    //   {
-    //     hid: "twitter:url",
-    //     name: "twitter:url",
-    //     content: "https://geekmaros.netlify.app",
-    //   },
-      // {
-      //   hid: "twitter:title",
-      //   name: 'twitter:title',
-      //   content: 'Abdulrasaq Mustapha - Geekmaros',
-      // },
-      // {
-      //   hid: "twitter:description",
-      //   name: 'twitter:description',
-      //   content:
-      //     'Geekmaros is a Frontend Engineer who specialises in building digital product and experiences',
-      // },
+      {
+        name: 'twitter:site',
+        content: '@geekmaros',
+      },
+      {
+        name: 'twitter:card',
+        content: 'summary_large_image',
+      },
+      {
+        hid: "twitter:url",
+        name: "twitter:url",
+        content: "https://geekmaros.netlify.app",
+      },
+      {
+        hid: "twitter:title",
+        name: 'twitter:title',
+        content: 'Abdulrasaq | Frontend Engineer - Geekmaros',
+      },
+      {
+        hid: "twitter:description",
+        name: 'twitter:description',
+        content:
+          'Geekmaros is a Frontend Engineer who specialises in building digital product and experiences',
+      },
 
       {
         hid: 'og:image',
@@ -105,11 +105,11 @@ export default {
         property: 'og:image:height',
         content: '160',
       },
-      // {
-      //   hid: "twitter:image",
-      //   name: 'twitter:image',
-      //   content: 'https://res.cloudinary.com/geekmaros/image/upload/v1662504729/Official_Two.jpg',
-      // },
+      {
+        hid: "twitter:image",
+        name: 'twitter:image',
+        content: 'https://res.cloudinary.com/geekmaros/image/upload/v1662504729/Official_Two.jpg',
+      },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
