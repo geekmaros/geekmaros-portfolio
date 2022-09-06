@@ -134,9 +134,10 @@ export default {
           date: 'Aug 2021 - Jun 2022',
           location: 'Copenhagen, Denmark',
           tasks: [
-            'Built custom media components to interact with uploads served from the Backend.',
-            'Improved the user experience by implementing various user centered features and intuitive design.',
-            'Improved legacy codebase..',
+            'Collaborated with the team to build a system architecture that resulted to 80% adoption by clients.',
+            'Code review and deployment.',
+            'Built solutions that helped reduced partner’s onboarding process from months and weeks to minutes.',
+            'Integrated third-party API which improved product accessibility.',
           ],
         },
         {
