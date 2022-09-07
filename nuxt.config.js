@@ -5,7 +5,7 @@ export default {
    ** Headers of the page
    */
   head: {
-    title: 'Abdulrasaq | Frontend Engineer - Geekmaros',
+    title: 'Abdulrasaq Mustapha | Frontend Engineer',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -16,29 +16,48 @@ export default {
           'Geekmaros is a Frontend Engineer who specialises in building digital product and experiences',
       },
       {
-        hid: 'og:title',
+        Author: 'description',
+        content:
+          'Abdulrasaq Mustapha',
+      },
+      {
+        name: 'robots',
+        content:  'index, follow',
+      },
+      {
+        name: 'canonical',
+        content:
+          'https://geekmaros.netlify.app/',
+      },
+      {
+        name: 'og:title',
         property: 'og:title',
         content: 'Abdulrasaq | Frontend Engineer - Geekmaros',
       },
       {
-        hid: 'og:description',
+        name: 'og:description',
         property: 'og:description',
         content:
-          'Geekmaros is a Frontend Engineer who specialises in building digital product and experiences',
+          'Abdulrasaq | Frontend Engineer - Geekmaros is a Frontend Engineer who specialises in building digital product and experiences',
       },
       {
         name: 'twitter:site',
         content: 'Abdulrasaq | Frontend Engineer - Geekmaros',
       },
-      {
+      {   name: 'og:site_name',
         property: 'og:site_name',
-        content: 'Abdulrasaq | Frontend Engineer - Geekmaros',
+        content: 'Geekmaros',
+      },
+      {
+        property: 'og:type',
+        content: 'website',
       },
       {
         hid: 'og:type',
         property: 'og:type',
-        content: 'Geekmaros Portfolio',
+        content: 'website',
       },
+
       {
         property: 'fb:profile_id',
         content: 'geekmaros',
@@ -62,6 +81,11 @@ export default {
       {
         property: 'og:see_also',
         content: 'https://www.youtube.com/channel/UC7VH99sMB5_ohKptI_7r_Qw?view_as=subscriber',
+      },
+      {
+        hid: 'mobile-web-app-capable',
+        property: 'mobile-web-app-capable',
+        content: 'yes',
       },
 
     //  copied from default
@@ -91,17 +115,15 @@ export default {
       },
 
       {
-        hid: 'og:image',
+        name: 'og:image',
         property: 'og:image',
         content: 'https://res.cloudinary.com/geekmaros/image/upload/v1662504729/Official_Two.jpg',
       },
       {
-        hid: 'og:image:width',
         property: 'og:image:width',
         content: '160',
       },
       {
-        hid: 'og:image:height',
         property: 'og:image:height',
         content: '160',
       },
