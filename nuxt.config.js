@@ -20,17 +20,26 @@ export default {
         content:
           'Abdulrasaq Mustapha',
       },
+      {
+        name: 'robots',
+        content:
+          'index, follow',
+      },
+      {
+        name: 'canonical',
+        href: 'www.geekmaros.dev',
+      },
 
       {
         name: 'og:title',
         property: 'og:title',
-        content: 'Abdulrasaq | Frontend Engineer - Geekmaros',
+        content: 'Abdulrasaq Mustapha | Frontend Engineer - Geekmaros',
       },
       {
         name: 'og:description',
         property: 'og:description',
         content:
-          'Abdulrasaq | Frontend Engineer - Geekmaros is a Frontend Engineer who specialises in building digital product and experiences',
+          'Geekmaros is a Frontend Engineer who specialises in building digital product and experiences',
       },
       {
         name: 'twitter:site',
@@ -90,9 +99,14 @@ export default {
         content: 'summary_large_image',
       },
       {
+        hid: "twitter:url",
+        name: "twitter:url",
+        content: "https://www.geekmaros.dev/",
+      },
+      {
         hid: "twitter:title",
         name: 'twitter:title',
-        content: 'Abdulrasaq | Frontend Engineer - Geekmaros',
+        content: 'Abdulrasaq Mustapha | Frontend Engineer - Geekmaros',
       },
       {
         hid: "twitter:description",
