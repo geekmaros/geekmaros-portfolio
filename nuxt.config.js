@@ -20,15 +20,7 @@ export default {
         content:
           'Abdulrasaq Mustapha',
       },
-      {
-        name: 'robots',
-        content:  'index, follow',
-      },
-      {
-        name: 'canonical',
-        content:
-          'https://geekmaros.netlify.app/',
-      },
+
       {
         name: 'og:title',
         property: 'og:title',
@@ -96,11 +88,6 @@ export default {
       {
         name: 'twitter:card',
         content: 'summary_large_image',
-      },
-      {
-        hid: "twitter:url",
-        name: "twitter:url",
-        content: "https://geekmaros.netlify.app",
       },
       {
         hid: "twitter:title",
