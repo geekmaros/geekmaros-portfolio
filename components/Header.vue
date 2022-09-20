@@ -41,8 +41,8 @@
         >
 
         <a
-          target='_blank'
-          href="https://geekmaros.hashnode.dev/"
+          target="_blank"
+          href="https://blog.geekmaros.dev/"
           class="block font-serif rounded-full text-white text-white hover:text-regal-blue font-medium px-2 py-1 mt-0 ml-6"
         >
           <!--          <span class="font-mono">{{ 1 + i++ }}.</span>-->
@@ -76,7 +76,7 @@
       >
       <a
         target='_blank'
-        href="https://geekmaros.hashnode.dev/"
+        href="https://blog.geekmaros.dev/"
         class="block rounded-full text-white text-white font-semibold hover:text-regal-blue text-xl font-medium px-2 py-5 items-center text-center"
       >Blog</a>
 

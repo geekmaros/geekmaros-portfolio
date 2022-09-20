@@ -32,11 +32,10 @@
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-nuxt": ">=0.4.2",
     "eslint-plugin-prettier": "^3.1.2",
-    "fibers": "^5.0.3",
     "jest": "^24.1.0",
     "prettier": "^1.19.1",
-    "sass": "^1.54.8",
-    "sass-loader": "^10.3.1",
+    "sass": "^1.54.9",
+    "sass-loader": "^8.0.2",
     "vue-jest": "^4.0.0-0"
   }
 }

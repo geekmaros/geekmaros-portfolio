@@ -118,15 +118,6 @@ export default {
   name: 'Work',
   data() {
     return {
-      placess: [
-        'Linkfire',
-        'GenSports',
-        'Jadek Inc',
-        'Demz Analytics',
-        'Freyda Inc',
-        'Al-Hikmah University',
-        'WebRelated Consulting',
-      ],
       places: [
         {
           role: 'Frontend Engineer II',
@@ -141,9 +132,20 @@ export default {
           ],
         },
         {
+          role: 'Systems Programmer II',
+          employer: 'Al-Hikmah University',
+          date: 'July 2018 - July 2022',
+          location: 'Kwara, Nigeria',
+          tasks: [
+            'Improved existing University’s website and Webometrics.',
+            'Developed a new feature to automate admission process for Faculty of  Post Graduate Schools.',
+            'Built a Tech Community in the University to improve tech awareness.',
+          ],
+        },
+        {
           role: 'Frontend Engineer',
           employer: 'GenSports',
-          date: 'Nov 2020 - Present',
+          date: 'Nov 2020 - Feb 2021',
           location: 'Lagos, Nigeria',
           tasks: [
             'Built custom media components to interact with uploads served from the Backend.',
@@ -184,17 +186,6 @@ export default {
             'Refined and improved the existing frontend code and design to meet the UI mockup design.',
             'Built various reusable web component to improve legacy code.',
             "Implemented a Progressive Web App feature for the company's website accompanied with SEO optimization.",
-          ],
-        },
-        {
-          role: 'Systems Programmer II',
-          employer: 'Al-Hikmah University',
-          date: 'July 2018 - April 2020',
-          location: 'Kwara, Nigeria',
-          tasks: [
-            'Improved existing University’s website and Webometrics.',
-            'Developed a new feature to automate admission process for Faculty of  Post Graduate Schools.',
-            'Built a Tech Community in the University to improve tech awareness.',
           ],
         },
         {
