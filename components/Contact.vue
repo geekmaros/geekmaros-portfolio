@@ -21,8 +21,8 @@
         say hi, kindly click the button below or send an email to
         <a
           class="text-regal-pink hover:text-regal-blue"
-          href="mailto:razicruz@gmail.com"
-          >razicruz@gmail.com</a
+          href="mailto:geekmaros@gmail.com"
+          >geekmaros@gmail.com</a
         >
       </p>
       <div class="button-wrapper flex justify-center items-center mt-5">
@@ -31,7 +31,7 @@
         >
           <a
             target="_blank"
-            href="mailto:razicruz@gmail.com"
+            href="mailto:geekmaros@gmail.com"
             class="text-white hover:text-regal-blue"
             >Send Message</a
           >
