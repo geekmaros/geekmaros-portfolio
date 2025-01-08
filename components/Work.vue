@@ -120,6 +120,17 @@ export default {
     return {
       places: [
         {
+          role: 'Frontend Engineer',
+          employer: 'Papershift',
+          date: 'October 2022 - May 2024',
+          location: 'Karlsruhe, Germany',
+          tasks: [
+            'Assumed full ownership and maintenance of a critical system module essential for delivering exceptional service to our customers, ensuring its seamless integration and optimal performance.',
+            'Play a pivotal role in code review processes and deployment cycles, upholding code quality standards and facilitating efficient software delivery.',
+            'Contribute significantly to the comprehensive documentation of the system, streamlining the onboarding process for new team members and improving the overall developer experience, facilitating seamless collaboration and knowledge sharing.',
+          ],
+        },
+        {
           role: 'Frontend Engineer II',
           employer: 'Linkfire',
           date: 'Aug 2021 - Jun 2022',
