@@ -4,7 +4,7 @@
   >
     <span
       class="text-regal-blue opacity-75 font-sans text-base font-semibold lg:text-xl"
-      >Hola, my name is</span
+      >Hi there, Welcome</span
     >
     <h1 class="text-5xl md:text-6xl lg:leading-normal text-white font-bold">
       Abdulrasaq Mustapha.
@@ -12,24 +12,29 @@
     <h2
       class="text-2xl md:text-5xl opacity-75 mt-0 text-white lg:leading-tight leading-snug font-semibold"
     >
-      I
+      I crraft
       <span class="text-regal-blue opacity-100 font-bold text-3xl md:text-6xl"
-        >design</span
+        >impactful</span
       >
       &
       <span class="text-regal-pink opacity-100 font-bold text-3xl md:text-6xl"
-        >develop</span
+        >user-focused</span
       >
-      frontend apps.
+      digital experiences.
     </h2>
     <p
       class="hero-text md:leading-2 w-auto tracking-tighter text-base text-justify md:text-left md:text-xl w-full md:pr-10 lg:w-7/12 md:text-justify"
     >
-      I am an Inventive, Creative and Enthusiastic Frontend Engineer with 3+ years utilizing web technologies to
-      design and develop digital solutions[products] for start-ups and businesses. 
-      I am driven by the goal to always deliver top-notch products ensuring technologies help businesses achieve their goals.
+     As a Product-Driven Frontend Engineer with over 5 years of experience, I specialize in designing and developing scalable,
+ modern web applications for startups and businesses worldwide. My passion lies in blending creativity with technology to deliver 
+top-notch solutions that help businesses achieve their goals and delight users.
     </p>
-    <a href="mailto:razicruz@gmail.com" class="focus:outline-none">
+       <p
+      class="hero-text md:leading-2 w-auto tracking-tighter text-base text-justify md:text-left md:text-xl w-full md:pr-10 lg:w-7/12 md:text-justify"
+    >
+     Let’s create something amazing together.
+    </p>
+    <a href="mailto:geekmaros@gmail.com" class="focus:outline-none">
       <button
         class="getintouch z-10 relative opacity-75 flex items-center mt-10 md:mt-10 py-3 px-5 text-white focus:outline-none hover:bg-hover-purple rounded border border-regal-blue bg-transparent font-hairline font-medium"
       >
