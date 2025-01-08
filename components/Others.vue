@@ -94,6 +94,22 @@ export default {
   data() {
     return {
       activities: [
+         {
+          name: 'Sahaba Quiz app',
+          summary:
+            'Test your Knowledge about the Sahaba by answering X numbers of random questions',
+          keywords: ['Quiz app', 'Reactjs', 'Context API'],
+          githubLink: 'https://github.com/geekmaros/sahabaquiz',
+          liveSite: 'https://sahabaquiz.vercel.app/',
+        },
+          {
+          name: 'API Versioning in Laravel 11',
+          summary: "A technical articel on how to versio your laravel app",
+          keywords: ['Laravel', 'Versioning'],
+          githubLink: '#',
+          liveSite:
+            'https://blog.geekmaros.dev/api-versioning-in-laravel-11',
+        },
         {
           name: 'Tandem Trivia Question (Quiz app)',
           summary:
