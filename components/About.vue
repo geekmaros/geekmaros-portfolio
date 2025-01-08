@@ -15,19 +15,19 @@
     >
       <div class="about-compo text-justify sm:col-span-2 md:pr-0 lg:pr-48">
         <p class="tracking-tighter">
-          Hola! I'm Abdulrasaq Mustapha also known as
+          Hi! I'm Abdulrasaq Mustapha also known as
           <a
             href="https://github.com/geekmaros"
             target="_blank"
             title="You can find me on all social media platform as @geekmaros"
             ><span class="text-regal-blue">geekmaros</span></a
-          >, a frontend developer based in Nigeria( 🇳🇬 ).
+          >
         </p>
         <p class="mt-4 tracking-tight">
-          I leverage on web technologies to design and develop awesome digital
-          solutions [products] for start-up companies and businesses. I am
-          driven with the goal to always deliver top-notch products with focus
-          on fast, elegant and accessible user experiences.
+         Hi there! I’m Abdulrasaq Mustapha, also known as Geekmaros, a Product Engineer and Frontend Developer based in Nigeria (🇳🇬). With over 5 years of experience, I specialize in creating scalable, user-centric digital solutions that drive business growth and elevate user experiences.
+        </p>
+        <p class="mt-4 tracking-tight">
+     I’m also a tech content creator, sharing insights through articles, talks, and mentorship to empower the tech community. As a community-driven engineer, I actively contribute to fostering innovation and collaboration within the global tech space.
         </p>
         <p class="mt-4 tracking-tighter">
           Here is a list of technologies I have recently been working with:
@@ -62,11 +62,15 @@ export default {
       technologies: [
         'HTML & CSS(SASS/SCSS)',
         'JavaScript ES6+',
-        'Vue (Nuxtjs)',
-        'Figma',
+        'Vuejs (Nuxtjs)',
+        'Reactjs (Nextjs)',
         'TailwindCSS',
-        'Node & MongoDb',
-        'UI & UX Design',
+        'Typescript',
+        'Ruby on Rails',
+        'AWS',
+        'Git',
+        'Jest/Playwright',
+        'Responsive Design',
         'VENOM Stack',
       ],
     }
