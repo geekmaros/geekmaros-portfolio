@@ -4,7 +4,7 @@
   >
     <span
       class="text-regal-blue opacity-75 font-sans text-base font-semibold lg:text-xl"
-      >Hi there, Welcome</span
+      >Hi there, Welcome, I am</span
     >
     <h1 class="text-5xl md:text-6xl lg:leading-normal text-white font-bold">
       Abdulrasaq Mustapha.
@@ -12,7 +12,7 @@
     <h2
       class="text-2xl md:text-5xl opacity-75 mt-0 text-white lg:leading-tight leading-snug font-semibold"
     >
-      I crraft
+      I craft
       <span class="text-regal-blue opacity-100 font-bold text-3xl md:text-6xl"
         >impactful</span
       >
