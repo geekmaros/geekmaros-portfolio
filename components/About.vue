@@ -24,7 +24,7 @@
           >
         </p>
         <p class="mt-4 tracking-tight">
-         Hi there! I’m Abdulrasaq Mustapha, also known as Geekmaros, a Product Engineer and Frontend Developer based in Nigeria (🇳🇬). With over 5 years of experience, I specialize in creating scalable, user-centric digital solutions that drive business growth and elevate user experiences.
+         A Product Engineer, Tech Content Creator. With over 5 years of experience, I specialize in creating scalable, user-centric digital solutions that drive business growth and elevate user experiences.
         </p>
         <p class="mt-4 tracking-tight">
      I’m also a tech content creator, sharing insights through articles, talks, and mentorship to empower the tech community. As a community-driven engineer, I actively contribute to fostering innovation and collaboration within the global tech space.
