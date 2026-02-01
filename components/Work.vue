@@ -119,6 +119,30 @@ export default {
   data() {
     return {
       places: [
+           {
+          role: 'Senior Frontend Engineer',
+          employer: 'FigureFlow',
+          date: 'July 2025 - December 2025',
+          location: 'Karlsruhe, Germany',
+          tasks: [
+            'Led a full dashboard UI revamp, improving data readability, layout hierarchy, and interaction clarity for financial analytics workflows.',
+            'Designed and implemented a modular CMS-driven landing page, enabling non-technical updates without engineering involvement. improving development speed and maintainability.',
+            'Integrated PostHog analytics to track user events, feature adoption, and behavior across dashboards and marketing pages.',
+          ],
+        },
+        {
+          role: 'Senio Frontend Engineer',
+          employer: 'Sync Teams,',
+          date: 'January 2025 - June 2025',
+          location: ' Remote, USA',
+          tasks: [
+            'Led the frontend architecture overhaul of SyncTeams, transforming it from a static v1 prototype into a dynamic, modular v2 system with a fully visual node-based builder using Vue Flow, enabling non-technical users to intuitively orchestrate AI agents.
+',
+            'Engineered a reusable component system and configuration framework, supporting deeply nested, dynamic forms (memory, tools, knowledge, embedder modules), drastically improving development speed and maintainability.',
+            'Implemented a performant and scalable visual editor UX with parent-child node hierarchy, snapping, interactive handles, and real-time validation,  enhancing the usability of complex multi-agent workflows and making the platform extensible for future tooling
+',
+          ],
+        },
         {
           role: 'Frontend Engineer',
           employer: 'Papershift',
