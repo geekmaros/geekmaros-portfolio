@@ -131,16 +131,14 @@ export default {
           ],
         },
         {
-          role: 'Senio Frontend Engineer',
-          employer: 'Sync Teams,',
+          role: 'Senior Frontend Engineer',
+          employer: 'Sync Teams',
           date: 'January 2025 - June 2025',
           location: ' Remote, USA',
           tasks: [
-            'Led the frontend architecture overhaul of SyncTeams, transforming it from a static v1 prototype into a dynamic, modular v2 system with a fully visual node-based builder using Vue Flow, enabling non-technical users to intuitively orchestrate AI agents.
-',
+            'Led the frontend architecture overhaul of SyncTeams, transforming it from a static v1 prototype into a dynamic, modular v2 system with a fully visual node-based builder using Vue Flow, enabling non-technical users to intuitively orchestrate AI agents.',
             'Engineered a reusable component system and configuration framework, supporting deeply nested, dynamic forms (memory, tools, knowledge, embedder modules), drastically improving development speed and maintainability.',
-            'Implemented a performant and scalable visual editor UX with parent-child node hierarchy, snapping, interactive handles, and real-time validation,  enhancing the usability of complex multi-agent workflows and making the platform extensible for future tooling
-',
+            'Implemented a performant and scalable visual editor UX with parent-child node hierarchy, snapping, interactive handles, and real-time validation,  enhancing the usability of complex multi-agent workflows and making the platform extensible for future tooling',
           ],
         },
         {
